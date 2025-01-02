@@ -159,6 +159,13 @@
                 <artifactId>plantuml-generator-maven-plugin</artifactId>
                 <groupId>de.elnarion.maven</groupId>
                 <version>3.0.1</version>
+                <configuration>
+                    <outputFilename>entity-relationship.plantuml</outputFilename>
+                    <outputDirectory>${project.basedir}</outputDirectory>
+                    <scanPackages>
+                        <scanPackage>com.sap.clean.architecture.shop</scanPackage>
+                    </scanPackages>
+                </configuration>
                 <executions>
                     <execution>
                         <id>generate-simple-diagram</id>
@@ -166,12 +173,6 @@
                             <goal>generate</goal>
                         </goals>
                         <phase>generate-test-sources</phase>
-                        <configuration>
-                            <outputFilename>er.plantuml</outputFilename>
-                            <scanPackages>
-                                <scanPackage>com.sap.clean.architecture.shop</scanPackage>
-                            </scanPackages>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
