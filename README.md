@@ -1,4 +1,4 @@
-# Hexagonal Architecture in Java Tutorial
+# Clean Architecture in Java Tutorial
 
 [![Build](https://github.com/SvenWoltmann/hexagonal-architecture-java/actions/workflows/build.yml/badge.svg)](https://github.com/SvenWoltmann/hexagonal-architecture-java/actions/workflows/build.yml)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=SvenWoltmann_hexagonal-architecture-java&metric=coverage)](https://sonarcloud.io/dashboard?id=SvenWoltmann_hexagonal-architecture-java)
@@ -8,12 +8,12 @@
 
 This repository contains a sample Java REST application implemented according to hexagonal architecture.
 
-It is part of the HappyCoders tutorial series on Hexagonal Architecture:
-* [Part 1: Hexagonal Architecture - What Is It? Why Should You Use It?](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/).
-* [Part 2: Hexagonal Architecture with Java - Tutorial](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture-java/).
+It is part of the HappyCoders tutorial series on Clean Architecture:
+* [Part 1: Clean Architecture - What Is It? Why Should You Use It?](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/).
+* [Part 2: Clean Architecture with Java - Tutorial](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture-java/).
 * [Part 3: Ports and Adapters Java Tutorial: Adding a Database Adapter](https://www.happycoders.eu/software-craftsmanship/ports-and-adapters-java-tutorial-db/).
-* [Part 4: Hexagonal Architecture with Quarkus - Tutorial](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture-quarkus/).
-* [Part 5: Hexagonal Architecture with Spring Boot - Tutorial](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture-spring-boot/).
+* [Part 4: Clean Architecture with Quarkus - Tutorial](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture-quarkus/).
+* [Part 5: Clean Architecture with Spring Boot - Tutorial](https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture-spring-boot/).
 
 # Branches
 
@@ -46,9 +46,9 @@ The source code is separated into four modules:
 
 The following diagram shows the hexagonal architecture of the application along with the source code modules:
 
-![Hexagonal Architecture Modules](doc/hexagonal-architecture-modules.png)
+![Clean Architecture Modules](doc/hexagonal-architecture-modules.png)
 
-The `model` module is not represented as a hexagon because it is not defined by the Hexagonal Architecture. Hexagonal Architecture leaves open what happens inside the application hexagon. 
+The `model` module is not represented as a hexagon because it is not defined by the Clean Architecture. Clean Architecture leaves open what happens inside the application hexagon. 
 
 # How to Run the Application
 

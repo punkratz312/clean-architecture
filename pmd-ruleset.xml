@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 
-<ruleset name="PMD HappyCoders ruleset - Hexagonal Architecture"
+<ruleset name="PMD HappyCoders ruleset - Clean Architecture"
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
-    <description>PMD ruleset for HappyCoders.eu (relaxed for Hexagonal Architecture tutorial)</description>
+    <description>PMD ruleset for HappyCoders.eu (relaxed for Clean Architecture tutorial)</description>
 
     <!-- Rule reference: https://pmd.github.io/pmd/pmd_rules_java.html -->
 
