@@ -21,6 +21,11 @@ public record Money(Currency currency, BigDecimal amount) {
     }
   }
 
+  public static Money of(Currency currency, int mayor, int minor) {
+    int scale = currency.getDefaultFractionDigits();
+    return new Money(currency, BigDecimal.valueOf(mayor).add(BigDecimal.valueOf(minor, scale)));
+  }
+
   public Money multiply(int multiplicand) {
     return new Money(currency, amount.multiply(BigDecimal.valueOf(multiplicand)));
   }
