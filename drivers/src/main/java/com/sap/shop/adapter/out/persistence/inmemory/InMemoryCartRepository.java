@@ -1,8 +1,8 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence.inmemory;
+package com.sap.shop.adapter.out.persistence.inmemory;
 
-import com.sap.clean.architecture.shop.application.port.out.persistence.CartRepository;
-import com.sap.clean.architecture.shop.model.cart.Cart;
-import com.sap.clean.architecture.shop.model.customer.CustomerId;
+import com.sap.shop.drivers.adapters.application.port.out.persistence.CartRepository;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.customer.CustomerId;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;

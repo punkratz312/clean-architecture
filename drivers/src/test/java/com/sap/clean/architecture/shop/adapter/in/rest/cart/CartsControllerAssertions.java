@@ -1,10 +1,10 @@
-package com.sap.clean.architecture.shop.adapter.in.rest.cart;
+package com.sap.shop.adapter.in.rest.cart;
 
 import static jakarta.ws.rs.core.Response.Status.OK;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.sap.clean.architecture.shop.model.cart.Cart;
-import com.sap.clean.architecture.shop.model.cart.CartLineItem;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.cart.CartLineItem;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 

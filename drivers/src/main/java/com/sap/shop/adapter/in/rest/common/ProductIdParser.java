@@ -1,8 +1,8 @@
-package com.sap.clean.architecture.shop.adapter.in.rest.common;
+package com.sap.shop.adapter.in.rest.common;
 
-import static com.sap.clean.architecture.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
+import static com.sap.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
 
-import com.sap.clean.architecture.shop.model.product.ProductId;
+import com.sap.shop.model.product.ProductId;
 import jakarta.ws.rs.core.Response;
 
 /**

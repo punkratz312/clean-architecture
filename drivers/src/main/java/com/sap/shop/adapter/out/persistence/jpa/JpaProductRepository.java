@@ -1,9 +1,9 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
-import com.sap.clean.architecture.shop.adapter.out.persistence.DemoProducts;
-import com.sap.clean.architecture.shop.application.port.out.persistence.ProductRepository;
-import com.sap.clean.architecture.shop.model.product.Product;
-import com.sap.clean.architecture.shop.model.product.ProductId;
+import com.sap.shop.adapter.out.persistence.DemoProducts;
+import com.sap.shop.drivers.adapters.application.port.out.persistence.ProductRepository;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.TypedQuery;

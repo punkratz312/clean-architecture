@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sap</groupId>
-    <artifactId>clean-architecture-parent</artifactId>
+    <artifactId>shop-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>drivers</module>
-        <module>drivers/interface-adapters</module>
-        <module>drivers/interface-adapters/application-business-rules</module>
-        <module>drivers/interface-adapters/application-business-rules/enterprise-business-rules</module>
+        <module>drivers/adapters</module>
+        <module>drivers/adapters/application-business-rules</module>
+        <module>drivers/adapters/application-business-rules/enterprise-business-rules</module>
     </modules>
     <properties>
         <maven.compiler.source>20</maven.compiler.source>
@@ -163,7 +163,7 @@
                     <outputFilename>entity-relationship.plantuml</outputFilename>
                     <outputDirectory>${project.basedir}</outputDirectory>
                     <scanPackages>
-                        <scanPackage>com.sap.clean.architecture.shop</scanPackage>
+                        <scanPackage>com.sap.shop</scanPackage>
                     </scanPackages>
                 </configuration>
                 <executions>

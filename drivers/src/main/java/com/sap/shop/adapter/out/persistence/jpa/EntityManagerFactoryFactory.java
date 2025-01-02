@@ -1,4 +1,4 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -16,7 +16,7 @@ public final class EntityManagerFactoryFactory {
   public static EntityManagerFactory createMySqlEntityManagerFactory(
       String jdbcUrl, String user, String password) {
     return Persistence.createEntityManagerFactory(
-        "com.sap.clean.architecture.shop.adapter.out.persistence.jpa",
+        "com.sap.shop.adapter.out.persistence.jpa",
         Map.of(
             "hibernate.dialect",
             "org.hibernate.dialect.MySQLDialect",

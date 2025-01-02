@@ -1,4 +1,4 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;

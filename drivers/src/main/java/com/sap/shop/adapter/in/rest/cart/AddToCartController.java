@@ -1,15 +1,15 @@
-package com.sap.clean.architecture.shop.adapter.in.rest.cart;
+package com.sap.shop.adapter.in.rest.cart;
 
-import static com.sap.clean.architecture.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
-import static com.sap.clean.architecture.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
-import static com.sap.clean.architecture.shop.adapter.in.rest.common.ProductIdParser.parseProductId;
+import static com.sap.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
+import static com.sap.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
+import static com.sap.shop.adapter.in.rest.common.ProductIdParser.parseProductId;
 
-import com.sap.clean.architecture.shop.application.port.in.cart.AddToCartUseCase;
-import com.sap.clean.architecture.shop.application.port.in.cart.ProductNotFoundException;
-import com.sap.clean.architecture.shop.model.cart.Cart;
-import com.sap.clean.architecture.shop.model.cart.NotEnoughItemsInStockException;
-import com.sap.clean.architecture.shop.model.customer.CustomerId;
-import com.sap.clean.architecture.shop.model.product.ProductId;
+import com.sap.shop.drivers.adapters.application.port.in.cart.AddToCartUseCase;
+import com.sap.shop.drivers.adapters.application.port.in.cart.ProductNotFoundException;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.cart.NotEnoughItemsInStockException;
+import com.sap.shop.model.customer.CustomerId;
+import com.sap.shop.model.product.ProductId;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;

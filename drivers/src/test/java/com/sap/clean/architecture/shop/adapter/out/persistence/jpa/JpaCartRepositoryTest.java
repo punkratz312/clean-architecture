@@ -1,6 +1,6 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
-import com.sap.clean.architecture.shop.adapter.out.persistence.AbstractCartRepositoryTest;
+import com.sap.shop.adapter.out.persistence.AbstractCartRepositoryTest;
 import jakarta.persistence.EntityManagerFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

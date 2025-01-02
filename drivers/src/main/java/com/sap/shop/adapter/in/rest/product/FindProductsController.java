@@ -1,9 +1,9 @@
-package com.sap.clean.architecture.shop.adapter.in.rest.product;
+package com.sap.shop.adapter.in.rest.product;
 
-import static com.sap.clean.architecture.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
+import static com.sap.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
 
-import com.sap.clean.architecture.shop.application.port.in.product.FindProductsUseCase;
-import com.sap.clean.architecture.shop.model.product.Product;
+import com.sap.shop.drivers.adapters.application.port.in.product.FindProductsUseCase;
+import com.sap.shop.model.product.Product;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;

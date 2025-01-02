@@ -1,16 +1,16 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence;
+package com.sap.shop.adapter.out.persistence;
 
-import static com.sap.clean.architecture.shop.model.money.TestMoneyFactory.euros;
-import static com.sap.clean.architecture.shop.model.product.TestProductFactory.createTestProduct;
+import static com.sap.shop.model.money.TestMoneyFactory.euros;
+import static com.sap.shop.model.product.TestProductFactory.createTestProduct;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.sap.clean.architecture.shop.application.port.out.persistence.CartRepository;
-import com.sap.clean.architecture.shop.application.port.out.persistence.ProductRepository;
-import com.sap.clean.architecture.shop.model.cart.Cart;
-import com.sap.clean.architecture.shop.model.cart.CartLineItem;
-import com.sap.clean.architecture.shop.model.cart.NotEnoughItemsInStockException;
-import com.sap.clean.architecture.shop.model.customer.CustomerId;
-import com.sap.clean.architecture.shop.model.product.Product;
+import com.sap.shop.drivers.adapters.application.port.out.persistence.CartRepository;
+import com.sap.shop.drivers.adapters.application.port.out.persistence.ProductRepository;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.cart.CartLineItem;
+import com.sap.shop.model.cart.NotEnoughItemsInStockException;
+import com.sap.shop.model.customer.CustomerId;
+import com.sap.shop.model.product.Product;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.junit.jupiter.api.BeforeEach;

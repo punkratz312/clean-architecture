@@ -1,6 +1,6 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence.inmemory;
+package com.sap.shop.adapter.out.persistence.inmemory;
 
-import com.sap.clean.architecture.shop.adapter.out.persistence.AbstractProductRepositoryTest;
+import com.sap.shop.adapter.out.persistence.AbstractProductRepositoryTest;
 
 class InMemoryProductRepositoryTest
     extends AbstractProductRepositoryTest<InMemoryProductRepository> {

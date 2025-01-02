@@ -1,7 +1,7 @@
-package com.sap.clean.architecture.shop.adapter.in.rest.cart;
+package com.sap.shop.adapter.in.rest.cart;
 
-import com.sap.clean.architecture.shop.model.cart.Cart;
-import com.sap.clean.architecture.shop.model.money.Money;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.money.Money;
 import java.util.List;
 
 /**

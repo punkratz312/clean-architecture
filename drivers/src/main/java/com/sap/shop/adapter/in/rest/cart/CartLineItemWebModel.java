@@ -1,8 +1,8 @@
-package com.sap.clean.architecture.shop.adapter.in.rest.cart;
+package com.sap.shop.adapter.in.rest.cart;
 
-import com.sap.clean.architecture.shop.model.cart.CartLineItem;
-import com.sap.clean.architecture.shop.model.money.Money;
-import com.sap.clean.architecture.shop.model.product.Product;
+import com.sap.shop.model.cart.CartLineItem;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
 
 /**
  * Model class for returning a shopping cart line item via REST API.

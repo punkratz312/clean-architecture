@@ -1,8 +1,8 @@
-package com.sap.clean.architecture.shop.adapter.out.persistence;
+package com.sap.shop.adapter.out.persistence;
 
-import com.sap.clean.architecture.shop.model.money.Money;
-import com.sap.clean.architecture.shop.model.product.Product;
-import com.sap.clean.architecture.shop.model.product.ProductId;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 import java.util.Currency;
 import java.util.List;
 

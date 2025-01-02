@@ -1,4 +1,4 @@
-package com.sap.clean.architecture.shop.adapter.in.rest.common;
+package com.sap.shop.adapter.in.rest.common;
 
 /**
  * An error entity with a status and message returned via REST API in case of an error.
