@@ -1,4 +1,4 @@
-package com.sap.shop.drivers.adapters.application.service.cart;
+package com.sap.shop.drivers.adapters.application.business.rules.service.cart;
 
 import com.sap.shop.drivers.adapters.application.port.in.cart.AddToCartUseCase;
 import com.sap.shop.drivers.adapters.application.port.in.cart.ProductNotFoundException;
