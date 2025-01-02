@@ -1,4 +1,4 @@
-package com.sap.shop.model.cart;
+package com.sap.clean.architecture.shop.model.cart;
 
 /**
  * An exception indicating that a customer wanted to add more items of a product to the cart than

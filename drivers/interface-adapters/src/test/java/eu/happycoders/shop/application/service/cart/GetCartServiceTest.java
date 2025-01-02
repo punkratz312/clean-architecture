@@ -1,15 +1,15 @@
-package com.sap.shop.application.service.cart;
+package com.sap.clean.architecture.shop.application.service.cart;
 
-import static com.sap.shop.model.money.TestMoneyFactory.euros;
-import static com.sap.shop.model.product.TestProductFactory.createTestProduct;
+import static com.sap.clean.architecture.shop.model.money.TestMoneyFactory.euros;
+import static com.sap.clean.architecture.shop.model.product.TestProductFactory.createTestProduct;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 
-import com.sap.shop.application.port.out.persistence.CartRepository;
-import com.sap.shop.model.cart.Cart;
-import com.sap.shop.model.cart.NotEnoughItemsInStockException;
-import com.sap.shop.model.customer.CustomerId;
-import com.sap.shop.model.product.Product;
+import com.sap.clean.architecture.shop.application.port.out.persistence.CartRepository;
+import com.sap.clean.architecture.shop.model.cart.Cart;
+import com.sap.clean.architecture.shop.model.cart.NotEnoughItemsInStockException;
+import com.sap.clean.architecture.shop.model.customer.CustomerId;
+import com.sap.clean.architecture.shop.model.product.Product;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

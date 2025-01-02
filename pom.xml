@@ -167,11 +167,9 @@
                         </goals>
                         <phase>generate-test-sources</phase>
                         <configuration>
-                            <outputFilename>testdiagram1.txt</outputFilename>
+                            <outputFilename>er.plantuml</outputFilename>
                             <scanPackages>
-                                <scanPackage>
-                                    some.package.to.process
-                                </scanPackage>
+                                <scanPackage>com.sap.clean.architecture.shop</scanPackage>
                             </scanPackages>
                         </configuration>
                     </execution>

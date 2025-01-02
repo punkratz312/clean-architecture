@@ -1,7 +1,7 @@
-package com.sap.shop.application.port.out.persistence;
+package com.sap.clean.architecture.shop.application.port.out.persistence;
 
-import com.sap.shop.model.product.Product;
-import com.sap.shop.model.product.ProductId;
+import com.sap.clean.architecture.shop.model.product.Product;
+import com.sap.clean.architecture.shop.model.product.ProductId;
 import java.util.List;
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package com.sap.shop.model.money;
+package com.sap.clean.architecture.shop.model.money;
 
 import java.math.BigDecimal;
 import java.util.Currency;

@@ -1,6 +1,6 @@
-package com.sap.shop.model.cart;
+package com.sap.clean.architecture.shop.model.cart;
 
-import com.sap.shop.model.customer.CustomerId;
+import com.sap.clean.architecture.shop.model.customer.CustomerId;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class TestCartFactory {

@@ -1,6 +1,6 @@
-package com.sap.shop.application.port.in.product;
+package com.sap.clean.architecture.shop.application.port.in.product;
 
-import com.sap.shop.model.product.Product;
+import com.sap.clean.architecture.shop.model.product.Product;
 import java.util.List;
 
 /**

@@ -1,4 +1,4 @@
-package com.sap.shop.model.money;
+package com.sap.clean.architecture.shop.model.money;
 
 import java.util.Currency;
 

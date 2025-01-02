@@ -1,4 +1,4 @@
-package com.sap.shop.application.port.in.cart;
+package com.sap.clean.architecture.shop.application.port.in.cart;
 
 /**
  * An exception indicating that no product was found for the product ID specified by a customer.

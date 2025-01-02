@@ -1,8 +1,8 @@
-package com.sap.shop.application.service.cart;
+package com.sap.clean.architecture.shop.application.service.cart;
 
-import com.sap.shop.application.port.in.cart.EmptyCartUseCase;
-import com.sap.shop.application.port.out.persistence.CartRepository;
-import com.sap.shop.model.customer.CustomerId;
+import com.sap.clean.architecture.shop.application.port.in.cart.EmptyCartUseCase;
+import com.sap.clean.architecture.shop.application.port.out.persistence.CartRepository;
+import com.sap.clean.architecture.shop.model.customer.CustomerId;
 import java.util.Objects;
 
 /**

@@ -1,4 +1,4 @@
-package com.sap.shop.model.customer;
+package com.sap.clean.architecture.shop.model.customer;
 
 /**
  * A customer ID value object (enabling type-safety and validation).

@@ -1,8 +1,8 @@
-package com.sap.shop.application.service.product;
+package com.sap.clean.architecture.shop.application.service.product;
 
-import com.sap.shop.application.port.in.product.FindProductsUseCase;
-import com.sap.shop.application.port.out.persistence.ProductRepository;
-import com.sap.shop.model.product.Product;
+import com.sap.clean.architecture.shop.application.port.in.product.FindProductsUseCase;
+import com.sap.clean.architecture.shop.application.port.out.persistence.ProductRepository;
+import com.sap.clean.architecture.shop.model.product.Product;
 import java.util.List;
 import java.util.Objects;
 

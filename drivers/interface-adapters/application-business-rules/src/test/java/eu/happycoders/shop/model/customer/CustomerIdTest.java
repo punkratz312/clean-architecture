@@ -1,4 +1,4 @@
-package com.sap.shop.model.customer;
+package com.sap.clean.architecture.shop.model.customer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

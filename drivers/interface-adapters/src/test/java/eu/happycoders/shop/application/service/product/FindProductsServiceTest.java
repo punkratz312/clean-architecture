@@ -1,14 +1,14 @@
-package com.sap.shop.application.service.product;
+package com.sap.clean.architecture.shop.application.service.product;
 
-import static com.sap.shop.model.money.TestMoneyFactory.euros;
-import static com.sap.shop.model.product.TestProductFactory.createTestProduct;
+import static com.sap.clean.architecture.shop.model.money.TestMoneyFactory.euros;
+import static com.sap.clean.architecture.shop.model.product.TestProductFactory.createTestProduct;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sap.shop.application.port.out.persistence.ProductRepository;
-import com.sap.shop.model.product.Product;
+import com.sap.clean.architecture.shop.application.port.out.persistence.ProductRepository;
+import com.sap.clean.architecture.shop.model.product.Product;
 import java.util.List;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.Test;

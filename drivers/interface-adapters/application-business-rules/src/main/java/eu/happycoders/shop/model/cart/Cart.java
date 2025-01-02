@@ -1,9 +1,9 @@
-package com.sap.shop.model.cart;
+package com.sap.clean.architecture.shop.model.cart;
 
-import com.sap.shop.model.customer.CustomerId;
-import com.sap.shop.model.money.Money;
-import com.sap.shop.model.product.Product;
-import com.sap.shop.model.product.ProductId;
+import com.sap.clean.architecture.shop.model.customer.CustomerId;
+import com.sap.clean.architecture.shop.model.money.Money;
+import com.sap.clean.architecture.shop.model.product.Product;
+import com.sap.clean.architecture.shop.model.product.ProductId;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;

@@ -1,6 +1,6 @@
-package com.sap.shop.model.product;
+package com.sap.clean.architecture.shop.model.product;
 
-import com.sap.shop.model.money.Money;
+import com.sap.clean.architecture.shop.model.money.Money;
 
 public class TestProductFactory {
 
