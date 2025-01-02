@@ -1,4 +1,4 @@
-package eu.happycoders.shop.model.customer;
+package com.sap.shop.model.customer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

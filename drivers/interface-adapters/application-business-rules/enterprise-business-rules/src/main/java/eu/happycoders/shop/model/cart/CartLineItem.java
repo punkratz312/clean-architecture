@@ -1,7 +1,7 @@
-package eu.happycoders.shop.model.cart;
+package com.sap.shop.model.cart;
 
-import eu.happycoders.shop.model.money.Money;
-import eu.happycoders.shop.model.product.Product;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

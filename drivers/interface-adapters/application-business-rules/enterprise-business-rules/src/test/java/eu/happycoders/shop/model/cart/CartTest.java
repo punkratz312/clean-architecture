@@ -1,14 +1,14 @@
-package eu.happycoders.shop.model.cart;
+package com.sap.shop.model.cart;
 
-import static eu.happycoders.shop.model.cart.TestCartFactory.emptyCartForRandomCustomer;
-import static eu.happycoders.shop.model.money.TestMoneyFactory.euros;
+import static com.sap.shop.model.cart.TestCartFactory.emptyCartForRandomCustomer;
+import static com.sap.shop.model.money.TestMoneyFactory.euros;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 import static org.assertj.core.api.Assertions.assertThatNoException;
 
-import eu.happycoders.shop.model.product.Product;
-import eu.happycoders.shop.model.product.TestProductFactory;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.TestProductFactory;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -1,10 +1,10 @@
-package eu.happycoders.shop.application.service.cart;
+package com.sap.shop.application.service.cart;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-import eu.happycoders.shop.application.port.out.persistence.CartRepository;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.application.port.out.persistence.CartRepository;
+import com.sap.shop.model.customer.CustomerId;
 import org.junit.jupiter.api.Test;
 
 class EmptyCartServiceTest {

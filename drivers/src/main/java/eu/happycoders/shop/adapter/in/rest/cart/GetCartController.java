@@ -1,10 +1,10 @@
-package eu.happycoders.shop.adapter.in.rest.cart;
+package com.sap.shop.adapter.in.rest.cart;
 
-import static eu.happycoders.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
+import static com.sap.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
 
-import eu.happycoders.shop.application.port.in.cart.GetCartUseCase;
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.application.port.in.cart.GetCartUseCase;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.customer.CustomerId;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;

@@ -1,6 +1,6 @@
-package eu.happycoders.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
-import eu.happycoders.shop.adapter.out.persistence.AbstractProductRepositoryTest;
+import com.sap.shop.adapter.out.persistence.AbstractProductRepositoryTest;
 import jakarta.persistence.EntityManagerFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

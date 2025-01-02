@@ -1,10 +1,10 @@
-package eu.happycoders.shop.adapter.out.persistence;
+package com.sap.shop.adapter.out.persistence;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import eu.happycoders.shop.application.port.out.persistence.ProductRepository;
-import eu.happycoders.shop.model.product.Product;
-import eu.happycoders.shop.model.product.ProductId;
+import com.sap.shop.application.port.out.persistence.ProductRepository;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,17 +1,17 @@
-package eu.happycoders.shop.adapter.in.rest.product;
+package com.sap.shop.adapter.in.rest.product;
 
-import static eu.happycoders.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
-import static eu.happycoders.shop.adapter.in.rest.HttpTestCommons.assertThatResponseIsError;
-import static eu.happycoders.shop.adapter.in.rest.product.ProductsControllerAssertions.assertThatResponseIsProductList;
-import static eu.happycoders.shop.model.money.TestMoneyFactory.euros;
-import static eu.happycoders.shop.model.product.TestProductFactory.createTestProduct;
+import static com.sap.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
+import static com.sap.shop.adapter.in.rest.HttpTestCommons.assertThatResponseIsError;
+import static com.sap.shop.adapter.in.rest.product.ProductsControllerAssertions.assertThatResponseIsProductList;
+import static com.sap.shop.model.money.TestMoneyFactory.euros;
+import static com.sap.shop.model.product.TestProductFactory.createTestProduct;
 import static io.restassured.RestAssured.given;
 import static jakarta.ws.rs.core.Response.Status.BAD_REQUEST;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import eu.happycoders.shop.application.port.in.product.FindProductsUseCase;
-import eu.happycoders.shop.model.product.Product;
+import com.sap.shop.application.port.in.product.FindProductsUseCase;
+import com.sap.shop.model.product.Product;
 import io.restassured.response.Response;
 import jakarta.ws.rs.core.Application;
 import java.util.List;

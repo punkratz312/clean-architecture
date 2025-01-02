@@ -1,6 +1,6 @@
-package eu.happycoders.shop.application.port.in.product;
+package com.sap.shop.application.port.in.product;
 
-import eu.happycoders.shop.model.product.Product;
+import com.sap.shop.model.product.Product;
 import java.util.List;
 
 /**

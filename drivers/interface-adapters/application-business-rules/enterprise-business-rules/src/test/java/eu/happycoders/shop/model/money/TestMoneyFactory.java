@@ -1,4 +1,4 @@
-package eu.happycoders.shop.model.money;
+package com.sap.shop.model.money;
 
 import java.util.Currency;
 

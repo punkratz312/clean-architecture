@@ -1,4 +1,4 @@
-package eu.happycoders.shop.model.customer;
+package com.sap.shop.model.customer;
 
 /**
  * A customer ID value object (enabling type-safety and validation).

@@ -1,8 +1,8 @@
-package eu.happycoders.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
-import eu.happycoders.shop.application.port.out.persistence.CartRepository;
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.application.port.out.persistence.CartRepository;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.customer.CustomerId;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import java.util.Optional;

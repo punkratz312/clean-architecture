@@ -1,8 +1,8 @@
-package eu.happycoders.shop.adapter.in.rest.cart;
+package com.sap.shop.adapter.in.rest.cart;
 
-import eu.happycoders.shop.model.cart.CartLineItem;
-import eu.happycoders.shop.model.money.Money;
-import eu.happycoders.shop.model.product.Product;
+import com.sap.shop.model.cart.CartLineItem;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
 
 /**
  * Model class for returning a shopping cart line item via REST API.

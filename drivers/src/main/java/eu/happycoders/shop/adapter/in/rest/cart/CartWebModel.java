@@ -1,7 +1,7 @@
-package eu.happycoders.shop.adapter.in.rest.cart;
+package com.sap.shop.adapter.in.rest.cart;
 
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.money.Money;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.money.Money;
 import java.util.List;
 
 /**

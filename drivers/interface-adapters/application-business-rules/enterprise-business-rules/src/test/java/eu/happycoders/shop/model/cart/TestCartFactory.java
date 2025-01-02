@@ -1,6 +1,6 @@
-package eu.happycoders.shop.model.cart;
+package com.sap.shop.model.cart;
 
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.model.customer.CustomerId;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class TestCartFactory {

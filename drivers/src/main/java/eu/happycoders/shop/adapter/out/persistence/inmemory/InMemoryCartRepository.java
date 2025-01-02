@@ -1,8 +1,8 @@
-package eu.happycoders.shop.adapter.out.persistence.inmemory;
+package com.sap.shop.adapter.out.persistence.inmemory;
 
-import eu.happycoders.shop.application.port.out.persistence.CartRepository;
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.application.port.out.persistence.CartRepository;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.customer.CustomerId;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;

@@ -1,8 +1,8 @@
-package eu.happycoders.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.cart.CartLineItem;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.cart.CartLineItem;
+import com.sap.shop.model.customer.CustomerId;
 import java.util.Optional;
 
 /**

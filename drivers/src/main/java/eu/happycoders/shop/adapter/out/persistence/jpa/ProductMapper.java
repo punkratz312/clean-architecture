@@ -1,8 +1,8 @@
-package eu.happycoders.shop.adapter.out.persistence.jpa;
+package com.sap.shop.adapter.out.persistence.jpa;
 
-import eu.happycoders.shop.model.money.Money;
-import eu.happycoders.shop.model.product.Product;
-import eu.happycoders.shop.model.product.ProductId;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 import java.util.Currency;
 import java.util.List;
 import java.util.Optional;

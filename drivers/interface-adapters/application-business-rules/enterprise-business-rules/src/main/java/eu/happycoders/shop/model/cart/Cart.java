@@ -1,9 +1,9 @@
-package eu.happycoders.shop.model.cart;
+package com.sap.shop.model.cart;
 
-import eu.happycoders.shop.model.customer.CustomerId;
-import eu.happycoders.shop.model.money.Money;
-import eu.happycoders.shop.model.product.Product;
-import eu.happycoders.shop.model.product.ProductId;
+import com.sap.shop.model.customer.CustomerId;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;

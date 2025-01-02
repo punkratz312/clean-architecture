@@ -1,4 +1,4 @@
-package eu.happycoders.shop.adapter.in.rest.common;
+package com.sap.shop.adapter.in.rest.common;
 
 import jakarta.ws.rs.ClientErrorException;
 import jakarta.ws.rs.core.Response;

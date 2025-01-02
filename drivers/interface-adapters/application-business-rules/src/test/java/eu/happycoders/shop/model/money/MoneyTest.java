@@ -1,7 +1,7 @@
-package eu.happycoders.shop.model.money;
+package com.sap.shop.model.money;
 
-import static eu.happycoders.shop.model.money.TestMoneyFactory.euros;
-import static eu.happycoders.shop.model.money.TestMoneyFactory.usDollars;
+import static com.sap.shop.model.money.TestMoneyFactory.euros;
+import static com.sap.shop.model.money.TestMoneyFactory.usDollars;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 
 import java.math.BigDecimal;

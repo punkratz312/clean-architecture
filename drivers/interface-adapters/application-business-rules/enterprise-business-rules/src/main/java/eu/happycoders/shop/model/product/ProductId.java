@@ -1,4 +1,4 @@
-package eu.happycoders.shop.model.product;
+package com.sap.shop.model.product;
 
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;

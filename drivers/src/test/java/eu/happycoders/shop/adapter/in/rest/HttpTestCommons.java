@@ -1,4 +1,4 @@
-package eu.happycoders.shop.adapter.in.rest;
+package com.sap.shop.adapter.in.rest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
