@@ -1,4 +1,4 @@
-package com.sap.shop.application.service.product;
+package com.sap.shop.drivers.adapters.application.business.rules.service.product;
 
 import com.sap.shop.application.port.in.product.FindProductsUseCase;
 import com.sap.shop.application.port.out.persistence.ProductRepository;

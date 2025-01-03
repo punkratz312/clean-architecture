@@ -1,4 +1,4 @@
-package com.sap.shop.application.port.in.product;
+package com.sap.shop.drivers.adapters.application.business.rules.port.in.product;
 
 import com.sap.shop.model.product.Product;
 import java.util.List;

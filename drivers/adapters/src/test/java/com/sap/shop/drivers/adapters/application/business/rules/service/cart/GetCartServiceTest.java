@@ -1,4 +1,4 @@
-package com.sap.shop.drivers.adapters.application.service.cart;
+package com.sap.shop.drivers.adapters.application.business.rules.service.cart;
 
 import static com.sap.shop.model.money.TestMoneyFactory.euros;
 import static com.sap.shop.model.product.TestProductFactory.createTestProduct;

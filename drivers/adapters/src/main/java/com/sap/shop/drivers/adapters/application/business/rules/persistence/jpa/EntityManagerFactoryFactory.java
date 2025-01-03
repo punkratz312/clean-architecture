@@ -17,7 +17,7 @@ public final class EntityManagerFactoryFactory {
   public static EntityManagerFactory createMySqlEntityManagerFactory(
       String jdbcUrl, String user, String password) {
     return Persistence.createEntityManagerFactory(
-        "eu.happycoders.shop.adapter.out.persistence.jpa",
+        "com.sap.shop.adapter.out.persistence.jpa",
         Map.of(
             "hibernate.dialect",
             "org.hibernate.dialect.MySQLDialect",

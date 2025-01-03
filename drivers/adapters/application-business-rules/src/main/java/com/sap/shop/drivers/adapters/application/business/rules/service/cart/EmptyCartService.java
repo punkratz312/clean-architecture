@@ -1,4 +1,4 @@
-package com.sap.shop.application.service.cart;
+package com.sap.shop.drivers.adapters.application.business.rules.service.cart;
 
 import com.sap.shop.application.port.in.cart.EmptyCartUseCase;
 import com.sap.shop.application.port.out.persistence.CartRepository;

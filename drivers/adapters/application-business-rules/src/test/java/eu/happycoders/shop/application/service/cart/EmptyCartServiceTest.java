@@ -1,4 +1,4 @@
-package com.sap.shop.application.service.cart;
+package com.sap.shop.drivers.adapters.application.business.rules.service.cart;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;

@@ -1,4 +1,4 @@
-package com.sap.shop.application.port.in.cart;
+package com.sap.shop.drivers.adapters.application.business.rules.port.in.cart;
 
 import com.sap.shop.model.customer.CustomerId;
 
