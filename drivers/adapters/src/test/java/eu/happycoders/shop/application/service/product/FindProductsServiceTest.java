@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sap.shop.drivers.adapters.application.port.out.persistence.ProductRepository;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.out.persistence.ProductRepository;
 import com.sap.shop.model.product.Product;
 import java.util.List;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;

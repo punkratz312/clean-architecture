@@ -1,6 +1,6 @@
 package com.sap.shop.adapter.out.persistence.inmemory;
 
-import com.sap.shop.drivers.adapters.application.port.out.persistence.CartRepository;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.out.persistence.CartRepository;
 import com.sap.shop.model.cart.Cart;
 import com.sap.shop.model.customer.CustomerId;
 import java.util.Map;

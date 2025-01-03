@@ -4,8 +4,8 @@ import static com.sap.shop.adapter.in.rest.common.ControllerCommons.clientErrorE
 import static com.sap.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
 import static com.sap.shop.adapter.in.rest.common.ProductIdParser.parseProductId;
 
-import com.sap.shop.drivers.adapters.application.port.in.cart.AddToCartUseCase;
-import com.sap.shop.drivers.adapters.application.port.in.cart.ProductNotFoundException;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.AddToCartUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.ProductNotFoundException;
 import com.sap.shop.model.cart.Cart;
 import com.sap.shop.model.cart.NotEnoughItemsInStockException;
 import com.sap.shop.model.customer.CustomerId;

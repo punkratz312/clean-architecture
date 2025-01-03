@@ -3,7 +3,7 @@ package com.sap.shop.drivers.adapters.application.service.cart;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-import com.sap.shop.drivers.adapters.application.port.out.persistence.CartRepository;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.out.persistence.CartRepository;
 import com.sap.shop.model.customer.CustomerId;
 import org.junit.jupiter.api.Test;
 

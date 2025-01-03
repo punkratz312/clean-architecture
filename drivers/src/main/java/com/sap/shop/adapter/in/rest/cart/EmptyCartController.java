@@ -2,7 +2,7 @@ package com.sap.shop.adapter.in.rest.cart;
 
 import static com.sap.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
 
-import com.sap.shop.drivers.adapters.application.port.in.cart.EmptyCartUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.EmptyCartUseCase;
 import com.sap.shop.model.customer.CustomerId;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.Path;

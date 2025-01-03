@@ -2,7 +2,7 @@ package com.sap.shop.adapter.in.rest.product;
 
 import static com.sap.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
 
-import com.sap.shop.drivers.adapters.application.port.in.product.FindProductsUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.product.FindProductsUseCase;
 import com.sap.shop.model.product.Product;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

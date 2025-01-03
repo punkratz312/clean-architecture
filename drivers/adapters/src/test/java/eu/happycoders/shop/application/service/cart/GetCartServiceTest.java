@@ -5,7 +5,8 @@ import static com.sap.shop.model.product.TestProductFactory.createTestProduct;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 
-import com.sap.shop.drivers.adapters.application.port.out.persistence.CartRepository;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.out.persistence.CartRepository;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.service.cart.GetCartService;
 import com.sap.shop.model.cart.Cart;
 import com.sap.shop.model.cart.NotEnoughItemsInStockException;
 import com.sap.shop.model.customer.CustomerId;

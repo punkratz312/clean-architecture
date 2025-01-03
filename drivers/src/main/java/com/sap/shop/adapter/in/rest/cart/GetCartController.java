@@ -2,7 +2,7 @@ package com.sap.shop.adapter.in.rest.cart;
 
 import static com.sap.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
 
-import com.sap.shop.drivers.adapters.application.port.in.cart.GetCartUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.GetCartUseCase;
 import com.sap.shop.model.cart.Cart;
 import com.sap.shop.model.customer.CustomerId;
 import jakarta.ws.rs.GET;

@@ -10,7 +10,7 @@ import static jakarta.ws.rs.core.Response.Status.BAD_REQUEST;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sap.shop.drivers.adapters.application.port.in.product.FindProductsUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.product.FindProductsUseCase;
 import com.sap.shop.model.product.Product;
 import io.restassured.response.Response;
 import jakarta.ws.rs.core.Application;

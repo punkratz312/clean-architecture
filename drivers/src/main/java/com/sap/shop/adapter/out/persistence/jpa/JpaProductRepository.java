@@ -1,7 +1,7 @@
 package com.sap.shop.adapter.out.persistence.jpa;
 
 import com.sap.shop.adapter.out.persistence.DemoProducts;
-import com.sap.shop.drivers.adapters.application.port.out.persistence.ProductRepository;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.out.persistence.ProductRepository;
 import com.sap.shop.model.product.Product;
 import com.sap.shop.model.product.ProductId;
 import jakarta.persistence.EntityManager;

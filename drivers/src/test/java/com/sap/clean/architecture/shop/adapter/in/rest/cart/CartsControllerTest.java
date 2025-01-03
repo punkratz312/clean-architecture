@@ -12,10 +12,10 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.sap.shop.drivers.adapters.application.port.in.cart.AddToCartUseCase;
-import com.sap.shop.drivers.adapters.application.port.in.cart.EmptyCartUseCase;
-import com.sap.shop.drivers.adapters.application.port.in.cart.GetCartUseCase;
-import com.sap.shop.drivers.adapters.application.port.in.cart.ProductNotFoundException;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.AddToCartUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.EmptyCartUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.GetCartUseCase;
+import com.sap.shop.drivers.adapters.application.business.rules.service.cart.port.in.cart.ProductNotFoundException;
 import com.sap.shop.model.cart.Cart;
 import com.sap.shop.model.cart.NotEnoughItemsInStockException;
 import com.sap.shop.model.customer.CustomerId;
