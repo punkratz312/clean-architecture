@@ -1,17 +1,17 @@
-package com.sap.shop.adapter.out.persistence.inmemory;
+package com.sap.tutor.clean.architecture.shop.adapter.out.persistence.inmemory;
 
-import com.sap.shop.adapter.out.persistence.AbstractCartRepositoryTest;
+import com.sap.tutor.clean.architecture.shop.adapter.out.persistence.AbstractCartRepositoryTest;
 
 class InMemoryCartRepositoryTest
-    extends AbstractCartRepositoryTest<InMemoryCartRepository, InMemoryProductRepository> {
+        extends AbstractCartRepositoryTest<InMemoryCartRepository, InMemoryProductRepository> {
 
-  @Override
-  protected InMemoryCartRepository createCartRepository() {
-    return new InMemoryCartRepository();
-  }
+    @Override
+    protected InMemoryCartRepository createCartRepository() {
+        return new InMemoryCartRepository();
+    }
 
-  @Override
-  protected InMemoryProductRepository createProductRepository() {
-    return new InMemoryProductRepository();
-  }
+    @Override
+    protected InMemoryProductRepository createProductRepository() {
+        return new InMemoryProductRepository();
+    }
 }
