@@ -1,9 +1,9 @@
 package com.sap.shop.drivers.adapters.application.business.rules.persistence.jpa;
 
-import eu.happycoders.shop.adapter.out.persistence.DemoProducts;
-import eu.happycoders.shop.application.port.out.persistence.ProductRepository;
-import eu.happycoders.shop.model.product.Product;
-import eu.happycoders.shop.model.product.ProductId;
+import com.sap.shop.adapter.out.persistence.DemoProducts;
+import com.sap.shop.application.port.out.persistence.ProductRepository;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.TypedQuery;

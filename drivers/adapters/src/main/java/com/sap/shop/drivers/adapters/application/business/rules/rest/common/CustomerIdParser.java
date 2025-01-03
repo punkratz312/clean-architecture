@@ -1,9 +1,9 @@
 package com.sap.shop.drivers.adapters.application.business.rules.rest.common;
 
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.model.customer.CustomerId;
 import jakarta.ws.rs.core.Response;
 
-import static eu.happycoders.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
+import static com.sap.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
 
 /**
  * A parser for customer IDs, throwing a {@link jakarta.ws.rs.ClientErrorException} for invalid

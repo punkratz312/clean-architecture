@@ -1,7 +1,7 @@
-package eu.happycoders.shop.application.service.cart;
+package com.sap.shop.application.service.cart;
 
-import static eu.happycoders.shop.model.money.TestMoneyFactory.euros;
-import static eu.happycoders.shop.model.product.TestProductFactory.createTestProduct;
+import static com.sap.shop.model.money.TestMoneyFactory.euros;
+import static com.sap.shop.model.product.TestProductFactory.createTestProduct;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
@@ -11,14 +11,14 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import eu.happycoders.shop.application.port.in.cart.ProductNotFoundException;
-import eu.happycoders.shop.application.port.out.persistence.CartRepository;
-import eu.happycoders.shop.application.port.out.persistence.ProductRepository;
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.cart.NotEnoughItemsInStockException;
-import eu.happycoders.shop.model.customer.CustomerId;
-import eu.happycoders.shop.model.product.Product;
-import eu.happycoders.shop.model.product.ProductId;
+import com.sap.shop.application.port.in.cart.ProductNotFoundException;
+import com.sap.shop.application.port.out.persistence.CartRepository;
+import com.sap.shop.application.port.out.persistence.ProductRepository;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.cart.NotEnoughItemsInStockException;
+import com.sap.shop.model.customer.CustomerId;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 import java.util.Optional;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.BeforeEach;

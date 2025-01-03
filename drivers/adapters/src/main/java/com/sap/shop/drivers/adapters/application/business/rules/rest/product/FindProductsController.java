@@ -1,7 +1,7 @@
 package com.sap.shop.drivers.adapters.application.business.rules.rest.product;
 
-import eu.happycoders.shop.application.port.in.product.FindProductsUseCase;
-import eu.happycoders.shop.model.product.Product;
+import com.sap.shop.application.port.in.product.FindProductsUseCase;
+import com.sap.shop.model.product.Product;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
@@ -11,7 +11,7 @@ import jakarta.ws.rs.core.Response;
 
 import java.util.List;
 
-import static eu.happycoders.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
+import static com.sap.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
 
 /**
  * REST controller for all product use cases.

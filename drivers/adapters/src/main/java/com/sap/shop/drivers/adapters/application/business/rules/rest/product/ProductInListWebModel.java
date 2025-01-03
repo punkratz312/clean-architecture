@@ -1,7 +1,7 @@
 package com.sap.shop.drivers.adapters.application.business.rules.rest.product;
 
-import eu.happycoders.shop.model.money.Money;
-import eu.happycoders.shop.model.product.Product;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
 
 /**
  * Model class for returning a product (in a list ... that's without description) via REST API.

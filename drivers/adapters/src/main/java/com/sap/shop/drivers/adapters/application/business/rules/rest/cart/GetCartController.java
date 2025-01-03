@@ -1,15 +1,15 @@
 package com.sap.shop.drivers.adapters.application.business.rules.rest.cart;
 
-import eu.happycoders.shop.application.port.in.cart.GetCartUseCase;
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.application.port.in.cart.GetCartUseCase;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.customer.CustomerId;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-import static eu.happycoders.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
+import static com.sap.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
 
 /**
  * REST controller for all shopping cart use cases.

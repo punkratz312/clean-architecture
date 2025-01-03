@@ -1,6 +1,6 @@
-package eu.happycoders.shop.adapter.out.persistence.inmemory;
+package com.sap.shop.adapter.out.persistence.inmemory;
 
-import eu.happycoders.shop.adapter.out.persistence.AbstractProductRepositoryTest;
+import com.sap.shop.adapter.out.persistence.AbstractProductRepositoryTest;
 
 class InMemoryProductRepositoryTest
     extends AbstractProductRepositoryTest<InMemoryProductRepository> {

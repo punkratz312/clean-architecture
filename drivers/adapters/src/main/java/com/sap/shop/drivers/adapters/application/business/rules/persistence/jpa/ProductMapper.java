@@ -1,8 +1,8 @@
 package com.sap.shop.drivers.adapters.application.business.rules.persistence.jpa;
 
-import eu.happycoders.shop.model.money.Money;
-import eu.happycoders.shop.model.product.Product;
-import eu.happycoders.shop.model.product.ProductId;
+import com.sap.shop.model.money.Money;
+import com.sap.shop.model.product.Product;
+import com.sap.shop.model.product.ProductId;
 
 import java.util.Currency;
 import java.util.List;

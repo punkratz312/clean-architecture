@@ -1,7 +1,7 @@
 package com.sap.shop.drivers.adapters.application.business.rules.rest.cart;
 
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.money.Money;
+
+import eu.happycoders.shop.application.MoneyAdapter;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import java.util.List;
  * @author Sven Woltmann
  */
 public record CartWebModel(
-    List<CartLineItemWebModel> lineItems, int numberOfItems, Money subTotal) {
+    List<CartLineItemWebModel> lineItems, int numberOfItems, MoneyAdapter subTotal) {
 
   static CartWebModel fromDomainModel(Cart cart) {
     return new CartWebModel(

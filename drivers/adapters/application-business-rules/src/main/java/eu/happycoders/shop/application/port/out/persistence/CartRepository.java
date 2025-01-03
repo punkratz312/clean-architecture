@@ -1,7 +1,7 @@
-package eu.happycoders.shop.application.port.out.persistence;
+package com.sap.shop.application.port.out.persistence;
 
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.shop.model.cart.Cart;
+import com.sap.shop.model.customer.CustomerId;
 import java.util.Optional;
 
 /**
