@@ -1,7 +1,5 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.cart;
 
-import com.sap.tutor.clean.architecture.shop.application.port.in.cart.EmptyCartUseCase;
-import com.sap.tutor.clean.architecture.shop.model.customer.CustomerId;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;

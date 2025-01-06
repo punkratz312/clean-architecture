@@ -1,9 +1,9 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.common;
 
-import com.sap.tutor.clean.architecture.shop.model.product.ProductId;
-import jakarta.ws.rs.core.Response;
 
-import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
+
+import static com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.common.ControllerCommons.clientErrorException;
 
 /**
  * A parser for product IDs, throwing a {@link jakarta.ws.rs.ClientErrorException} for invalid

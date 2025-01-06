@@ -1,8 +1,9 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.persistence.jpa;
 
-import com.sap.tutor.clean.architecture.shop.model.cart.Cart;
-import com.sap.tutor.clean.architecture.shop.model.cart.CartLineItem;
-import com.sap.tutor.clean.architecture.shop.model.customer.CustomerId;
+
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart.Cart;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart.CartLineItem;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
 
 import java.util.Optional;
 

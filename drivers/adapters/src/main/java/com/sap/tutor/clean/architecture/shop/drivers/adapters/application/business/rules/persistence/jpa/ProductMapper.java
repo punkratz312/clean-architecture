@@ -1,8 +1,9 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.persistence.jpa;
 
-import com.sap.tutor.clean.architecture.shop.model.money.Money;
-import com.sap.tutor.clean.architecture.shop.model.product.Product;
-import com.sap.tutor.clean.architecture.shop.model.product.ProductId;
+
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.money.Money;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
 
 import java.util.Currency;
 import java.util.List;
