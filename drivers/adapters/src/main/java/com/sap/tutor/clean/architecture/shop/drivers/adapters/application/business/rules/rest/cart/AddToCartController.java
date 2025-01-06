@@ -1,18 +1,16 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.cart;
 
-import com.sap.tutor.clean.architecture.shop.application.port.in.cart.AddToCartUseCase;
-import com.sap.tutor.clean.architecture.shop.application.port.in.cart.ProductNotFoundException;
-import com.sap.tutor.clean.architecture.shop.model.cart.Cart;
-import com.sap.tutor.clean.architecture.shop.model.cart.NotEnoughItemsInStockException;
-import com.sap.tutor.clean.architecture.shop.model.customer.CustomerId;
-import com.sap.tutor.clean.architecture.shop.model.product.ProductId;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
 
-import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
-import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
-import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.common.ProductIdParser.parseProductId;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart.Cart;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart.NotEnoughItemsInStockException;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.AddToCartUseCase;
+import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.ProductNotFoundException;
+
+import static com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.common.ControllerCommons.clientErrorException;
+import static com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.common.CustomerIdParser.parseCustomerId;
+import static com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.common.ProductIdParser.parseProductId;
 
 /**
  * REST controller for all shopping cart use cases.
