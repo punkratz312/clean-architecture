@@ -1,6 +1,5 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.money;
 
-
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.Test;
 

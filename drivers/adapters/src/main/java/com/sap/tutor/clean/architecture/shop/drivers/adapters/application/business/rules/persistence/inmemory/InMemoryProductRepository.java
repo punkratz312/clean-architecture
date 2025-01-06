@@ -1,6 +1,5 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.persistence.inmemory;
 
-
 import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
 import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
 import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.persistence.DemoProducts;

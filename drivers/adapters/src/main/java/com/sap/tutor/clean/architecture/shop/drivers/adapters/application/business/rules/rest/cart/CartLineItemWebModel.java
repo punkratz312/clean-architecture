@@ -1,6 +1,5 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.cart;
 
-
 import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart.CartLineItem;
 import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.money.Money;
 import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;

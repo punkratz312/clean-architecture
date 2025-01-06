@@ -1,6 +1,5 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.money;
 
-
 import java.util.Currency;
 
 public class TestMoneyFactory {

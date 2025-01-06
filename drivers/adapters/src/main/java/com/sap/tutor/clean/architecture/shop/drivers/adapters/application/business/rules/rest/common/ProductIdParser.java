@@ -1,6 +1,5 @@
 package com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.common;
 
-
 import com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
 
 import static com.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rest.common.ControllerCommons.clientErrorException;
