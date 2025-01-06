@@ -1,15 +1,15 @@
-package eu.happycoders.shop.bootstrap.e2e;
+package com.sap.tutor.clean.architecture.shop.bootstrap.e2e;
 
-import static eu.happycoders.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
-import static eu.happycoders.shop.adapter.in.rest.cart.CartsControllerAssertions.assertThatResponseIsCart;
-import static eu.happycoders.shop.adapter.out.persistence.DemoProducts.LED_LIGHTS;
-import static eu.happycoders.shop.adapter.out.persistence.DemoProducts.MONITOR_DESK_MOUNT;
+import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
+import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.cart.CartsControllerAssertions.assertThatResponseIsCart;
+import static com.sap.tutor.clean.architecture.shop.adapter.out.persistence.DemoProducts.LED_LIGHTS;
+import static com.sap.tutor.clean.architecture.shop.adapter.out.persistence.DemoProducts.MONITOR_DESK_MOUNT;
 import static io.restassured.RestAssured.given;
 import static jakarta.ws.rs.core.Response.Status.NO_CONTENT;
 
-import eu.happycoders.shop.model.cart.Cart;
-import eu.happycoders.shop.model.cart.NotEnoughItemsInStockException;
-import eu.happycoders.shop.model.customer.CustomerId;
+import com.sap.tutor.clean.architecture.shop.model.cart.Cart;
+import com.sap.tutor.clean.architecture.shop.model.cart.NotEnoughItemsInStockException;
+import com.sap.tutor.clean.architecture.shop.model.customer.CustomerId;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;

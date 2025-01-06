@@ -1,10 +1,10 @@
-package eu.happycoders.shop.bootstrap.e2e;
+package com.sap.tutor.clean.architecture.shop.bootstrap.e2e;
 
-import static eu.happycoders.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
-
-import eu.happycoders.shop.bootstrap.Launcher;
+import com.sap.tutor.clean.architecture.shop.drivers.Launcher;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+
+import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
 
 abstract class EndToEndTest {
 

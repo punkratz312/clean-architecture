@@ -1,4 +1,4 @@
-package eu.happycoders.shop.bootstrap.archunit;
+package com.sap.tutor.clean.architecture.shop.bootstrap.archunit;
 
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 

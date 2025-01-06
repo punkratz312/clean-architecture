@@ -1,9 +1,9 @@
-package eu.happycoders.shop.bootstrap.e2e;
+package com.sap.tutor.clean.architecture.shop.bootstrap.e2e;
 
-import static eu.happycoders.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
-import static eu.happycoders.shop.adapter.in.rest.product.ProductsControllerAssertions.assertThatResponseIsProductList;
-import static eu.happycoders.shop.adapter.out.persistence.DemoProducts.COMPUTER_MONITOR;
-import static eu.happycoders.shop.adapter.out.persistence.DemoProducts.MONITOR_DESK_MOUNT;
+import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
+import static com.sap.tutor.clean.architecture.shop.adapter.in.rest.product.ProductsControllerAssertions.assertThatResponseIsProductList;
+import static com.sap.tutor.clean.architecture.shop.adapter.out.persistence.DemoProducts.COMPUTER_MONITOR;
+import static com.sap.tutor.clean.architecture.shop.adapter.out.persistence.DemoProducts.MONITOR_DESK_MOUNT;
 import static io.restassured.RestAssured.given;
 
 import io.restassured.response.Response;
