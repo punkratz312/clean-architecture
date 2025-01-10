@@ -38,7 +38,7 @@ package "The Clean Architecture" as ca {
         package "Interface-Adapters" as ia COLOR_INTERFACE_ADAPTERS {
             package "Application-Business-Rules" as appRules COLOR_APP_BUSINESS_RULES {
                 package "Enterprise-Business-Rules" as ebr COLOR_ENTERPRISE_BUSINESS_RULES {
-                    class User {
+                    class "User" as u {
                         +id: int
                         +username: String
                         +role: String
@@ -57,4 +57,5 @@ application --> model
 fd --> ia
 ia --> appRules
 appRules --> ebr
+u .[#red].> actor
 @enduml
