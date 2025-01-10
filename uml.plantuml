@@ -5,7 +5,7 @@ package actor as actor {
 
 package "Hexagonal Architecture" as hexa {
     package "Adapters" as adapters {
-        package "Application" as application {
+        package "Application" as aüü {
             package "Model" as model {
                 class User {
                     +id: int
@@ -20,7 +20,7 @@ package "Hexagonal Architecture" as hexa {
 package "The Clean Architecture" as ca {
     package "Framework-Drivers" as fd {
         package "Interface-Adapters" as ia {
-            package "Application-Business-Rules" as apprules {
+            package "Application-Business-Rules" as appRules {
                 package "Enterprise-Business-Rules" as ebr {
                     class User {
                         +id: int
@@ -35,10 +35,10 @@ package "The Clean Architecture" as ca {
 
 actor --> adapters
 actor --> fd
-adapters --> application
-application --> model
+adapters --> aüü
+aüü --> model
 
 fd --> ia
-ia --> apprules
-apprules --> ebr
+ia --> appRules
+appRules --> ebr
 @enduml
