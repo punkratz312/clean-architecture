@@ -78,8 +78,11 @@ actor --> adapters
 actor --> fd
 adapters --> application
 application --> model
-fdUser .[#green].> iUser
+fdUser -[#green]-> iUser
+iUser .[#green].> fdUser
+fdUser -[#green]-> iUser
 iUser .[#green].> aUser
+aUser -[#green]-> iUser
 aUser .[#green].> eUser
 
 uHex .[#red].> actor
