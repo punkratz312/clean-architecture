@@ -35,18 +35,28 @@ package "Hexagonal Architecture" as hexa {
 
 package "The Clean Architecture" as ca {
     package "Framework-Drivers" as fd COLOR_FRAMEWORK_DRIVERS {
+    class "User" as fdUser {
+                                            +id: int
+                                            +username: String
+                                            +role: String
+                                        }
         package "Interface-Adapters" as ia COLOR_INTERFACE_ADAPTERS {
+class "User" as iUser {
+                                        +id: int
+                                        +username: String
+                                        +role: String
+                                    }
             package "Application-Business-Rules" as appRules COLOR_APP_BUSINESS_RULES {
-                                    class "UserAppAdapter" as UserAppAdapter {
+                                    class "User" as aUser {
                                         +id: int
                                         +username: String
                                         +role: String
                                     }
                 package "Enterprise-Business-Rules" as ebr COLOR_ENTERPRISE_BUSINESS_RULES {
-                    class "User" as uCA {
+                    class "User" as eUser {
                         +id: int
                         +username: String
-                        +role: String
+                        +role: Enum
                     }
                 }
             }
@@ -58,10 +68,10 @@ actor --> adapters
 actor --> fd
 adapters --> application
 application --> model
+uHex .[#red].> actor
+uCA .[#green].> UserAppAdapter
 
 fd --> ia
 ia --> appRules
 appRules --> ebr
-uHex .[#red].> actor
-uCA .[#green].> UserAppAdapter
 @enduml
