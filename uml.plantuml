@@ -68,9 +68,11 @@ actor --> adapters
 actor --> fd
 adapters --> application
 application --> model
-uHex .[#red].> actor
-uCA .[#green].> UserAppAdapter
+fdUser .[#green].> iUser
+iUser .[#green].> aUser
+aUser .[#green].> eUser
 
+uHex .[#red].> actor
 fd --> ia
 ia --> appRules
 appRules --> ebr
