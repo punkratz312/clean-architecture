@@ -21,7 +21,13 @@ package actor as actor {
 
 package "Hexagonal Architecture" as hexa {
     package "Adapters" as adapters COLOR_ADAPTERS {
+    package "file" as file COLOR_ADAPTERS {
+    }
+    package "web" as web COLOR_ADAPTERS {
+    package "rest" as rest COLOR_ADAPTERS {
         package "Application" as application COLOR_APPLICATION {
+        package "ports" as ports COLOR_APPLICATION {
+        package "Use Case" as useCase COLOR_APPLICATION {
             package "Model" as model COLOR_MODEL {
                 class "User" as uHex {
                     +id: int
@@ -29,7 +35,11 @@ package "Hexagonal Architecture" as hexa {
                     +email: String
                 }
             }
+            }
         }
+    }
+    }
+    }
     }
 }
 
@@ -73,6 +83,8 @@ iUser .[#green].> aUser
 aUser .[#green].> eUser
 
 uHex .[#red].> actor
+uHex .[#red].> application
+uHex .[#red].> adapters
 fd --> ia
 ia --> appRules
 appRules --> ebr
