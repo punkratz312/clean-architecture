@@ -1,33 +1,40 @@
 @startuml
 skinparam linetype ortho
-package "hexa arhcitecte" as hexa {
-package adapters {
-    package application {
-        package model {
-            class User {
+
+package "Hexagonal Architecture" as hexa {
+    package "Adapters" as adapters {
+        package "Application" as application {
+            package "Model" as model {
+                class User {
+                    +id: int
+                    +name: String
+                    +email: String
+                }
             }
         }
     }
 }
-}
-package "The Clean Architecture" as ca {
-package "framework-drivers" as fa {
-    package "interface-adapters" as ia {
-    package "application-buiness-rules" {
-        package "enterprice-buiness-rules" as apprules {
-                class User {
 
-        }
+package "The Clean Architecture" as ca {
+    package "Framework-Drivers" as fa {
+        package "Interface-Adapters" as ia {
+            package "Application-Business-Rules" as apprules {
+                package "Enterprise-Business-Rules" as ebr {
+                    class User {
+                        +id: int
+                        +username: String
+                        +role: String
+                    }
+                }
+            }
         }
     }
-    }
 }
-}
+
 adapters --> application
 application --> model
-'model .[#red].> application
-'application .[#red].> User
-'application .[#red].> adapters
-'adapters .[#red].> model
-'adapters .[#red].> User
+
+fa --> ia
+ia --> apprules
+apprules --> ebr
 @enduml
