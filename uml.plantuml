@@ -1,5 +1,7 @@
 @startuml
 skinparam linetype ortho
+package actor as actor {
+}
 
 package "Hexagonal Architecture" as hexa {
     package "Adapters" as adapters {
@@ -16,7 +18,7 @@ package "Hexagonal Architecture" as hexa {
 }
 
 package "The Clean Architecture" as ca {
-    package "Framework-Drivers" as fa {
+    package "Framework-Drivers" as fd {
         package "Interface-Adapters" as ia {
             package "Application-Business-Rules" as apprules {
                 package "Enterprise-Business-Rules" as ebr {
@@ -31,10 +33,12 @@ package "The Clean Architecture" as ca {
     }
 }
 
+actor --> adapters
+actor --> fd
 adapters --> application
 application --> model
 
-fa --> ia
+fd --> ia
 ia --> apprules
 apprules --> ebr
 @enduml
