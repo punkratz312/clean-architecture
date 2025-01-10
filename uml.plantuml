@@ -1,12 +1,28 @@
 @startuml
 skinparam linetype ortho
+
+!define BG_COLOR_MAIN #f5f5f5
+!define BORDER_COLOR #000000
+!define COLOR_ADAPTERS #d9f7be
+!define COLOR_APPLICATION #b7eb8f
+!define COLOR_MODEL #87e8de
+!define COLOR_FRAMEWORK_DRIVERS #adc6ff
+!define COLOR_INTERFACE_ADAPTERS #91d5ff
+!define COLOR_APP_BUSINESS_RULES #69c0ff
+!define COLOR_ENTERPRISE_BUSINESS_RULES #40a9ff
+
+skinparam packageBackgroundColor BG_COLOR_MAIN
+skinparam packageBorderColor BORDER_COLOR
+skinparam classBackgroundColor #ffffff
+skinparam classBorderColor BORDER_COLOR
+
 package actor as actor {
 }
 
 package "Hexagonal Architecture" as hexa {
-    package "Adapters" as adapters {
-        package "Application" as aüü {
-            package "Model" as model {
+    package "Adapters" as adapters COLOR_ADAPTERS {
+        package "Application" as application COLOR_APPLICATION {
+            package "Model" as model COLOR_MODEL {
                 class User {
                     +id: int
                     +name: String
@@ -18,10 +34,10 @@ package "Hexagonal Architecture" as hexa {
 }
 
 package "The Clean Architecture" as ca {
-    package "Framework-Drivers" as fd {
-        package "Interface-Adapters" as ia {
-            package "Application-Business-Rules" as appRules {
-                package "Enterprise-Business-Rules" as ebr {
+    package "Framework-Drivers" as fd COLOR_FRAMEWORK_DRIVERS {
+        package "Interface-Adapters" as ia COLOR_INTERFACE_ADAPTERS {
+            package "Application-Business-Rules" as appRules COLOR_APP_BUSINESS_RULES {
+                package "Enterprise-Business-Rules" as ebr COLOR_ENTERPRISE_BUSINESS_RULES {
                     class User {
                         +id: int
                         +username: String
@@ -35,8 +51,8 @@ package "The Clean Architecture" as ca {
 
 actor --> adapters
 actor --> fd
-adapters --> aüü
-aüü --> model
+adapters --> application
+application --> model
 
 fd --> ia
 ia --> appRules
