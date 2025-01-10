@@ -23,7 +23,7 @@ package "Hexagonal Architecture" as hexa {
     package "Adapters" as adapters COLOR_ADAPTERS {
         package "Application" as application COLOR_APPLICATION {
             package "Model" as model COLOR_MODEL {
-                class User {
+                class "User" as uHex {
                     +id: int
                     +name: String
                     +email: String
@@ -37,8 +37,13 @@ package "The Clean Architecture" as ca {
     package "Framework-Drivers" as fd COLOR_FRAMEWORK_DRIVERS {
         package "Interface-Adapters" as ia COLOR_INTERFACE_ADAPTERS {
             package "Application-Business-Rules" as appRules COLOR_APP_BUSINESS_RULES {
+                                    class "UserAppAdapter" as UserAppAdapter {
+                                        +id: int
+                                        +username: String
+                                        +role: String
+                                    }
                 package "Enterprise-Business-Rules" as ebr COLOR_ENTERPRISE_BUSINESS_RULES {
-                    class "User" as u {
+                    class "User" as uCA {
                         +id: int
                         +username: String
                         +role: String
@@ -57,5 +62,6 @@ application --> model
 fd --> ia
 ia --> appRules
 appRules --> ebr
-u .[#red].> actor
+uHex .[#red].> actor
+uCA .[#green].> UserAppAdapter
 @enduml
