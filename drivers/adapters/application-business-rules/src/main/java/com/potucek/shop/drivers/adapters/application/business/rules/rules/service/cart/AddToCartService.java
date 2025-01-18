@@ -6,7 +6,7 @@ import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.b
 import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
 import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.AddToCartUseCase;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product.ProductNotFoundException;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.ProductNotFoundException;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
 

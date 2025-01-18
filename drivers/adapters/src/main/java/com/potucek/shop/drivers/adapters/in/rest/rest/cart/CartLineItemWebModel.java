@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rest.cart;
+package com.potucek.shop.drivers.adapters.in.rest.rest.cart;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.CartLineItem;
 import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.money.Money;

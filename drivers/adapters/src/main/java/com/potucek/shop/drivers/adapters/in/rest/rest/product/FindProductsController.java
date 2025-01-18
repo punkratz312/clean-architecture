@@ -1,7 +1,7 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rest.product;
+package com.potucek.shop.drivers.adapters.in.rest.rest.product;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product.FindProductsUseCase;
+import eu.happycoders.shop.application.port.in.product.FindProductsUseCase;
+import eu.happycoders.shop.model.product.Product;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
@@ -11,7 +11,7 @@ import jakarta.ws.rs.core.Response;
 
 import java.util.List;
 
-import static com.potucek.shop.drivers.adapters.application.business.rules.rest.common.ControllerCommons.clientErrorException;
+import static eu.happycoders.shop.adapter.in.rest.common.ControllerCommons.clientErrorException;
 
 /**
  * REST controller for all product use cases.

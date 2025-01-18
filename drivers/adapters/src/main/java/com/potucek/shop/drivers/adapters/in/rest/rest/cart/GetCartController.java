@@ -1,17 +1,15 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rest.cart;
+package com.potucek.shop.drivers.adapters.in.rest.rest.cart;
 
-
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.customer.CustomerId;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.GetCartUseCase;
+import eu.happycoders.shop.application.port.in.cart.GetCartUseCase;
+import eu.happycoders.shop.model.cart.Cart;
+import eu.happycoders.shop.model.customer.CustomerId;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-import static com.potucek.shop.drivers.adapters.application.business.rules.rest.common.CustomerIdParser.parseCustomerId;
-
+import static eu.happycoders.shop.adapter.in.rest.common.CustomerIdParser.parseCustomerId;
 
 /**
  * REST controller for all shopping cart use cases.

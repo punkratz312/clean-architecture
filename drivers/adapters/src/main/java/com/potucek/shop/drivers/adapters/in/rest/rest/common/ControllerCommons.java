@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rest.common;
+package com.potucek.shop.drivers.adapters.in.rest.rest.common;
 
 import jakarta.ws.rs.ClientErrorException;
 import jakarta.ws.rs.core.Response;

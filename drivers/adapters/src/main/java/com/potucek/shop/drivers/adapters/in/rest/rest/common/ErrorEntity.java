@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rest.common;
+package com.potucek.shop.drivers.adapters.in.rest.rest.common;
 
 /**
  * An error entity with a status and message returned via REST API in case of an error.

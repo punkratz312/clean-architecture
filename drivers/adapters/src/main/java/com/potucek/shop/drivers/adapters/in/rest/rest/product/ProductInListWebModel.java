@@ -1,7 +1,7 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rest.product;
+package com.potucek.shop.drivers.adapters.in.rest.rest.product;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.money.Money;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
+import eu.happycoders.shop.model.money.Money;
+import eu.happycoders.shop.model.product.Product;
 
 /**
  * Model class for returning a product (in a list ... that's without description) via REST API.

@@ -8,7 +8,7 @@ import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.b
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.AddToCartUseCase;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.EmptyCartUseCase;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.GetCartUseCase;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product.ProductNotFoundException;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.ProductNotFoundException;
 import com.potucek.shop.drivers.drivers.in.rest.cart.AddToCartController;
 import com.potucek.shop.drivers.drivers.in.rest.cart.EmptyCartController;
 import com.potucek.shop.drivers.drivers.in.rest.cart.GetCartController;
