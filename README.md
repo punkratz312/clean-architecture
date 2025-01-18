@@ -1,5 +1,88 @@
 # Clean Architecture in Java Tutorial
 
+https://www.linkedin.com/advice/1/what-differences-between-clean-hexagonal-software-1sg5e#:~:text=While%20both%20prioritize%20maintainability%20and,adapters%20to%20be%20plugged%20in.&text=Clean%20Architecture%2C%20introduced%20by%20Robert,into%20layers%20with%20clear%20dependencies.
+
+All  Engineering  Computer Science
+What are the differences between clean and hexagonal software architecture?
+Powered by AI and the LinkedIn community
+1
+Clean architecture
+2
+Hexagonal architecture
+3
+Differences and similarities
+4
+Examples and tips
+5
+Benefits and challenges
+6
+Here’s what else to consider
+Top experts in this article
+Selected by the community from 4 contributions. Learn more
+Member profile image
+Teguh Sutanto
+Software Developer | IT Project Management, IT Projects
+View contribution
+
+2
+Member profile image
+Mozammil Rizwan
+Hyper Automation | Azure AI Services | Business Intelligence | OCR | Document Processing | GenAI | ERP, CRM, HCM, EDI…
+View contribution
+
+1
+
+
+See what others are saying
+1
+Clean architecture
+Clean architecture is a style that aims to achieve high levels of modularity, testability, and independence from frameworks and databases. It is based on the idea of separating the software into concentric layers, each with a specific responsibility and dependency rule. The innermost layer is the domain, which contains the business logic and entities. The outer layers are the application, which defines the use cases and interacts with the domain, the interface, which provides the input and output channels for the application, and the infrastructure, which implements the external dependencies such as databases and frameworks. By following this structure, you can isolate the core logic from the details and make your code more readable, maintainable, and adaptable.
+
+Contributor profile photo
+Mozammil Rizwan
+Follow
+Hyper Automation | Azure AI Services | Business Intelligence | OCR | Document Processing | GenAI | ERP, CRM, HCM, EDI, SCM, E-Commerce, Healthcare Automation Specialist
+
+
+Clean Architecture, proposed by Robert C. Martin, emphasizes the separation of concerns with concentric layers (Entities, Use Cases, Interface Adapters, and Frameworks) for flexibility and testability. Hexagonal Architecture, also known as Ports and Adapters, focuses on isolating core business logic from external dependencies, promoting a hexagonal shape with ports for interaction. While both prioritize maintainability and testability, Clean Architecture has distinct layers, and Hexagonal Architecture centers on ports for communication, allowing adapters to be plugged in.
+
+…see more
+
+1
+Contributor profile photo
+Mozammil Rizwan
+Follow
+Hyper Automation | Azure AI Services | Business Intelligence | OCR | Document Processing | GenAI | ERP, CRM, HCM, EDI, SCM, E-Commerce, Healthcare Automation Specialist
+
+
+Clean Architecture, introduced by Robert C. Martin, emphasizes separating concerns into layers with clear dependencies. It prioritizes dependency inversion and testability. On the other hand, Hexagonal Architecture, also known as Ports and Adapters, focuses on application ports for interactions and adapters for external systems. While Clean Architecture provides a broader guideline, Hexagonal Architecture specifically highlights the importance of isolating application logic from external dependencies through adapters, fostering flexibility and maintainability.
+
+…see more
+
+1
+2
+Hexagonal architecture
+Hexagonal architecture is another style that focuses on decoupling the core logic from the external dependencies. It is based on the metaphor of a hexagon, where each side represents a port that can connect to an adapter. The ports are the interfaces that define the input and output operations for the core logic, which is located inside the hexagon. The adapters are the implementations that connect the ports to the external systems, such as databases, web services, or user interfaces. By using this approach, you can swap the adapters without affecting the core logic and test it independently from the infrastructure. You can also design your system as a network of hexagons, each with its own responsibility and communication protocol.
+
+Contributor profile photo
+Teguh Sutanto
+Follow
+Software Developer | IT Project Management, IT Projects
+
+
+For example in messaging application, the core (hexagon) orchestrates message handling. Ports, interfaces defining crucial functionalities like message storage and notifications, include MessageRepository and NotificationService. Adapters implement these ports: DatabaseAdapter for storing messages and EmailNotificationAdapter for notifications. Such flexibility, a hallmark of hexagonal architecture, enhances maintainability and allows for efficient testing by substituting adapters with mocks during testing phases.
+
+…see more
+
+1
+3
+Differences and similarities
+Both clean and hexagonal architectures share some common goals and principles, such as separating the concerns, enforcing the dependency inversion, and enabling the testability of the software. However, they also have some differences in terms of terminology, granularity, and flexibility. For example, clean architecture uses more specific names for the layers, such as domain and application, while hexagonal architecture uses more generic names, such as ports and adapters. Clean architecture also defines a strict hierarchy of dependencies, where the inner layers cannot depend on the outer layers, while hexagonal architecture allows more freedom in choosing the direction of the dependencies, as long as they are inverted. Moreover, clean architecture prescribes a fixed number of layers, while hexagonal architecture allows you to create as many hexagons as you need.
+
+
+
+
+
 [![Build](https://github.com/SvenWoltmann/hexagonal-architecture-java/actions/workflows/build.yml/badge.svg)](https://github.com/SvenWoltmann/hexagonal-architecture-java/actions/workflows/build.yml)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=SvenWoltmann_hexagonal-architecture-java&metric=coverage)](https://sonarcloud.io/dashboard?id=SvenWoltmann_hexagonal-architecture-java)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=SvenWoltmann_hexagonal-architecture-java&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=SvenWoltmann_hexagonal-architecture-java)

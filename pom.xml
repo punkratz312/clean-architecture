@@ -3,15 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.sap</groupId>
-    <artifactId>clean-architecture-parent</artifactId>
+    <groupId>com.sap.tutor.clean.architecture</groupId>
+    <artifactId>shop</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>drivers</module>
-        <module>drivers/interface-adapters</module>
-        <module>drivers/interface-adapters/application-business-rules</module>
-        <module>drivers/interface-adapters/application-business-rules/enterprise-business-rules</module>
+        <module>drivers/adapters</module>
+        <module>drivers/adapters/application-business-rules</module>
+        <module>drivers/adapters/application-business-rules/enterprise-business-rules</module>
     </modules>
     <properties>
         <maven.compiler.source>20</maven.compiler.source>
@@ -25,7 +25,8 @@
         <sonar.java.spotbugs.reportPaths>target/spotbugsXml.xml</sonar.java.spotbugs.reportPaths>
         <sonar.java.pmd.reportPaths>target/pmd.xml</sonar.java.pmd.reportPaths>
         <sonar.java.checkstyle.reportPaths>target/checkstyle-result.xml</sonar.java.checkstyle.reportPaths>
-        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../bootstrap/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../bootstrap/target/site/jacoco-aggregate/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <dependencies>
@@ -60,11 +61,11 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.tngtech.archunit</groupId>
-                <artifactId>archunit-junit5</artifactId>
-                <version>1.1.0</version>
-            </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>com.tngtech.archunit</groupId>-->
+            <!--                <artifactId>archunit-junit5</artifactId>-->
+            <!--                <version>1.1.0</version>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
@@ -132,33 +133,40 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.0</version>
             </plugin>
-            <plugin>
-                <groupId>com.diffplug.spotless</groupId>
-                <artifactId>spotless-maven-plugin</artifactId>
-                <version>2.36.0</version>
-                <configuration>
-                    <java>
-                        <googleJavaFormat>
-                            <!-- Latest version can be found here: https://github.com/google/google-java-format/releases -->
-                            <version>1.17.0</version>
-                            <style>GOOGLE</style>
-                        </googleJavaFormat>
-                        <lineEndings>UNIX</lineEndings>
-                    </java>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <phase>validate</phase>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--            <plugin>-->
+            <!--                <groupId>com.diffplug.spotless</groupId>-->
+            <!--                <artifactId>spotless-maven-plugin</artifactId>-->
+            <!--                <version>2.36.0</version>-->
+            <!--                <configuration>-->
+            <!--                    <java>-->
+            <!--                        <googleJavaFormat>-->
+            <!--                            &lt;!&ndash; Latest version can be found here: https://github.com/google/google-java-format/releases &ndash;&gt;-->
+            <!--                            <version>1.17.0</version>-->
+            <!--                            <style>GOOGLE</style>-->
+            <!--                        </googleJavaFormat>-->
+            <!--                        <lineEndings>UNIX</lineEndings>-->
+            <!--                    </java>-->
+            <!--                </configuration>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <goals>-->
+            <!--                            <goal>check</goal>-->
+            <!--                        </goals>-->
+            <!--                        &lt;!&ndash;                        <phase>validate</phase>&ndash;&gt;-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
             <plugin>
                 <artifactId>plantuml-generator-maven-plugin</artifactId>
                 <groupId>de.elnarion.maven</groupId>
                 <version>3.0.1</version>
+                <configuration>
+                    <outputFilename>entity-relationship.plantuml</outputFilename>
+                    <outputDirectory>${project.basedir}</outputDirectory>
+                    <scanPackages>
+                        <scanPackage>com.sap.tutor.clean.architecture.shop</scanPackage>
+                    </scanPackages>
+                </configuration>
                 <executions>
                     <execution>
                         <id>generate-simple-diagram</id>
@@ -166,12 +174,6 @@
                             <goal>generate</goal>
                         </goals>
                         <phase>generate-test-sources</phase>
-                        <configuration>
-                            <outputFilename>er.plantuml</outputFilename>
-                            <scanPackages>
-                                <scanPackage>com.sap.clean.architecture.shop</scanPackage>
-                            </scanPackages>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
