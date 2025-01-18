@@ -1,8 +1,8 @@
 package com.potucek.shop.drivers.drivers.in.rest.cart;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.customer.CustomerId;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.GetCartUseCase;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.in.api.cart.GetCartUseCase;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;

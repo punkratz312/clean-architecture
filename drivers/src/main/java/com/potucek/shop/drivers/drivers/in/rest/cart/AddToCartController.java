@@ -1,11 +1,11 @@
 package com.potucek.shop.drivers.drivers.in.rest.cart;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.NotEnoughItemsInStockException;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.customer.CustomerId;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.AddToCartUseCase;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.ProductNotFoundException;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.in.api.cart.AddToCartUseCase;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.in.api.cart.ProductNotFoundException;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;

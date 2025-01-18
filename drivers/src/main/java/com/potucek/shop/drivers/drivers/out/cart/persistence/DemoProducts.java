@@ -1,8 +1,8 @@
 package com.potucek.shop.drivers.drivers.out.cart.persistence;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.money.Money;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
 
 import java.util.Currency;
 import java.util.List;

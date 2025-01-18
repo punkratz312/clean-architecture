@@ -1,8 +1,8 @@
 package com.potucek.shop.drivers.adapters.application.application.service.product;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.service.product.FindProductsService;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.service.product.FindProductsService;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.Test;
 

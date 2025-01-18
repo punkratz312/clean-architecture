@@ -1,8 +1,8 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.money.Money;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
 
 public class TestProductFactory {
 

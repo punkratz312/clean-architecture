@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.money;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.money.Money;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.Test;
 

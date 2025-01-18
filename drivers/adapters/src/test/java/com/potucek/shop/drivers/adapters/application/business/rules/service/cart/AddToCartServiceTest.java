@@ -1,14 +1,13 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.service.cart;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.NotEnoughItemsInStockException;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.customer.CustomerId;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.ProductNotFoundException;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.service.cart.AddToCartService;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.in.api.cart.ProductNotFoundException;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

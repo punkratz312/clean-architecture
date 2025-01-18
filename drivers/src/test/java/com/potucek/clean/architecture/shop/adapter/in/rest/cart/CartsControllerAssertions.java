@@ -1,7 +1,7 @@
 package com.potucek.clean.architecture.shop.adapter.in.rest.cart;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.CartLineItem;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 

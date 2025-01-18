@@ -1,8 +1,8 @@
 package com.potucek.shop.drivers.drivers.out.cart.persistence.jpa;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
-import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
-import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
 import com.potucek.shop.drivers.drivers.out.cart.persistence.DemoProducts;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
