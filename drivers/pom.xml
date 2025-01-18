@@ -70,15 +70,15 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- To use the "attached test JAR" from the "model" module -->
-        <dependency>
-            <groupId>com.potucek.</groupId>
-            <artifactId>enterprise-business-rules</artifactId>
-            <version>${project.version}</version>
-            <classifier>tests</classifier>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
+        <!--        &lt;!&ndash; To use the "attached test JAR" from the "model" module &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.potucek.</groupId>-->
+        <!--            <artifactId>enterprise-business-rules</artifactId>-->
+        <!--            <version>${project.version}</version>-->
+        <!--            <classifier>tests</classifier>-->
+        <!--            <type>test-jar</type>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
     </dependencies>
 
     <!-- To create an "attached test JAR" to be able to use this module's test classes in other modules -->

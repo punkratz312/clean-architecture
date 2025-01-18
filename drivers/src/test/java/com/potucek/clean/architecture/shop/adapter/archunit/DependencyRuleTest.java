@@ -8,7 +8,7 @@
 //
 //class DependencyRuleTest {
 //
-//  private static final String ROOT_PACKAGE = "eu.happycoders.shop";
+//  private static final String ROOT_PACKAGE = "com.potucek.shop";
 //  private static final String MODEL_PACKAGE = "model";
 //  private static final String APPLICATION_PACKAGE = "application";
 //  private static final String PORT_PACKAGE = "application.port";
