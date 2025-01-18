@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.sap.tutor.clean.architecture</groupId>
+        <groupId>com.potucek.tutor.clean.architecture</groupId>
         <artifactId>shop</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../../pom.xml</relativePath>
@@ -14,7 +14,7 @@
     <artifactId>application-business-rules</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.sap.tutor.clean.architecture</groupId>
+            <groupId>com.potucek.tutor.clean.architecture</groupId>
             <artifactId>enterprise-business-rules</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
