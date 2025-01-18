@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.service.cart;
+package com.potucek.shop.drivers.adapters.application.application.service.cart;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.service.cart.EmptyCartService;

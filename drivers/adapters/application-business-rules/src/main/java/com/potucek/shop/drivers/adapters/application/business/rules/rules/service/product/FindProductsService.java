@@ -1,9 +1,8 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rules.service.product.
+package com.potucek.shop.drivers.adapters.application.business.rules.rules.service.product;
 
-.shop.drivers.adapters.application.business.rules.service.product;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.port.in.api.product.FindProductsUseCase;
-import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product.FindProductsUseCase;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 
 import java.util.List;

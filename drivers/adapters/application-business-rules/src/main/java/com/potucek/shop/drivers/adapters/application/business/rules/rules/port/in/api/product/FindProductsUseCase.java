@@ -1,6 +1,4 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product.
-
-.shop.drivers.adapters.application.business.rules.port.in.api.product;
+package com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product;
 
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 

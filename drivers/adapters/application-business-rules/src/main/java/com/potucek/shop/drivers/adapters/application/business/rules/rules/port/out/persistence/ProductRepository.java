@@ -1,6 +1,4 @@
-package com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.
-
-.shop.drivers.adapters.application.business.rules.port.out.persistence;
+package com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence;
 
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
