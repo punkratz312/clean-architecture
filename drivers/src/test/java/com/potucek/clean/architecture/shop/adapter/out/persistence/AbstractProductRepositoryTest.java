@@ -1,6 +1,6 @@
 package com.potucek.clean.architecture.shop.adapter.out.persistence;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
 import com.potucek.shop.drivers.in.rest.cart.persistence.DemoProducts;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;

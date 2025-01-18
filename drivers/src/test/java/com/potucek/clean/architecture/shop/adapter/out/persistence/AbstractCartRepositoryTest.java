@@ -1,7 +1,7 @@
 package com.potucek.clean.architecture.shop.adapter.out.persistence;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
-import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;

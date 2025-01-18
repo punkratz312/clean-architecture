@@ -2,7 +2,7 @@ package com.potucek.clean.architecture.shop.adapter.in.rest.cart;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.AddToCartUseCase;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.EmptyCartUseCase;
-import com.potucek.shop.drivers.adapters.application.business.rules.port.in.api.cart.GetCartUseCase;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.GetCartUseCase;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product.ProductNotFoundException;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;

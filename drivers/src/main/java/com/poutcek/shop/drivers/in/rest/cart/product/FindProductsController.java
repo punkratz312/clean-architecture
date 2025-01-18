@@ -1,6 +1,6 @@
 package com.poutcek.shop.drivers.in.rest.cart.product;
 
-import com.potucek.shop.drivers.adapters.application.business.rules.port.in.api.product.FindProductsUseCase;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product.FindProductsUseCase;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.in.rest.cart.persistence;
+package com.poutcek.shop.drivers.in.rest.cart.persistence.inmemory;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
