@@ -1,16 +1,16 @@
 package com.potucek.clean.architecture.shop.adapter.out.persistence;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-
-import java.util.List;
-import java.util.Optional;
-
+import com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.DemoProducts;
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+import java.util.Optional;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public abstract class AbstractProductRepositoryTest<T extends ProductRepository> {
 

@@ -2,7 +2,7 @@ package com.potucek.sap.tutor.clean.architecture.shop.drivers.adapters.applicati
 
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.product.FindProductsService;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.Test;
 

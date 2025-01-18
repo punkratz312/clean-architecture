@@ -1,7 +1,8 @@
-package com.potucek.clean.architecture.shop.adapter.out.persistence.jpa;
+package com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.jpa;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+
 import java.util.Map;
 
 /**

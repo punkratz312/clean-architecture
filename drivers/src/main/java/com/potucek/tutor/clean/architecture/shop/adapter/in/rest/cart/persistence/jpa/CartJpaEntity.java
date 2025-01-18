@@ -1,13 +1,10 @@
-package com.potucek.clean.architecture.shop.adapter.out.persistence.jpa;
+package com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.jpa;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import java.util.List;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 /**
  * JPA entity class for a shopping cart.

@@ -1,10 +1,6 @@
-package com.potucek.clean.architecture.shop.adapter.out.persistence.jpa;
+package com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.jpa;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 

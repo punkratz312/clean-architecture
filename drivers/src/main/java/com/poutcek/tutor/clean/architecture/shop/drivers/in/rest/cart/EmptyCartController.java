@@ -1,6 +1,6 @@
 package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart;
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.EmptyCartUseCase;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.api.cart.EmptyCartUseCase;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.Path;

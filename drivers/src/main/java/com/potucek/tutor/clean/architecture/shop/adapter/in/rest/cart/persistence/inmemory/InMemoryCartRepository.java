@@ -1,9 +1,9 @@
-package com.potucek.clean.architecture.shop.adapter.out.persistence.inmemory;
+package com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.inmemory;
 
 
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
 
 import java.util.Map;
 import java.util.Optional;

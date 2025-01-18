@@ -7,8 +7,8 @@
 //
 //import static com.potucek.clean.architecture.shop.adapter.in.rest.HttpTestCommons.TEST_PORT;
 //import static com.potucek.clean.architecture.shop.adapter.in.rest.product.ProductsControllerAssertions.assertThatResponseIsProductList;
-//import static com.potucek.clean.architecture.shop.adapter.out.persistence.DemoProducts.COMPUTER_MONITOR;
-//import static com.potucek.clean.architecture.shop.adapter.out.persistence.DemoProducts.MONITOR_DESK_MOUNT;
+//import static com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.DemoProducts.COMPUTER_MONITOR;
+//import static com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.DemoProducts.MONITOR_DESK_MOUNT;
 //import static io.restassured.RestAssured.given;
 //
 //class FindProductsTest extends EndToEndTest {

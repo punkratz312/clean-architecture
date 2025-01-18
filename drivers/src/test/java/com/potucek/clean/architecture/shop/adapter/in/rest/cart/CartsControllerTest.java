@@ -1,12 +1,12 @@
 package com.potucek.clean.architecture.shop.adapter.in.rest.cart;
 
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.api.cart.EmptyCartUseCase;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.api.cart.GetCartUseCase;
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.AddToCartUseCase;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.EmptyCartUseCase;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.GetCartUseCase;
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.ProductNotFoundException;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
 import com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.AddToCartController;
