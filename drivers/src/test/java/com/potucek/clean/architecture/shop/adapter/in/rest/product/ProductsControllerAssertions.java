@@ -1,13 +1,13 @@
 package com.potucek.clean.architecture.shop.adapter.in.rest.product;
 
-import static jakarta.ws.rs.core.Response.Status.OK;
-import static org.assertj.core.api.Assertions.assertThat;
-
-
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+
 import java.util.List;
+
+import static jakarta.ws.rs.core.Response.Status.OK;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public final class ProductsControllerAssertions {
 

@@ -1,6 +1,6 @@
 package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.common;
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.ProductId;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
 import jakarta.ws.rs.core.Response;
 
 import static com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.common.ControllerCommons.clientErrorException;
