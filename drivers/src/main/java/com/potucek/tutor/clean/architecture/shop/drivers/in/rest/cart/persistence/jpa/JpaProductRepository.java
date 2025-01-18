@@ -42,7 +42,7 @@ public class JpaProductRepository implements ProductRepository {
   public Optional<Product> findById(ProductId productId) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
         ProductJpaEntity jpaEntity =
-                entityManager.find(com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity.class,
+                entityManager.find(ProductJpaEntity.class,
                         productId.value());
       return ProductMapper.toModelEntityOptional(jpaEntity);
     }
@@ -51,14 +51,14 @@ public class JpaProductRepository implements ProductRepository {
   @Override
   public List<Product> findByNameOrDescription(String queryString) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-        TypedQuery<com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity> query =
+        TypedQuery<ProductJpaEntity> query =
           entityManager
               .createQuery(
                   "from ProductJpaEntity where name like :query or description like :query",
                       ProductJpaEntity.class)
               .setParameter("query", "%" + queryString + "%");
 
-        List<com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity> entities = query.getResultList();
+        List<ProductJpaEntity> entities = query.getResultList();
 
       return ProductMapper.toModelEntities(entities);
     }

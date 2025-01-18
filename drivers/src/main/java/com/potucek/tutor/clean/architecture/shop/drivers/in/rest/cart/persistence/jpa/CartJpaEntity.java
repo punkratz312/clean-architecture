@@ -20,5 +20,5 @@ public class CartJpaEntity {
   @Id private int customerId;
 
   @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
-  private List<com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.CartLineItemJpaEntity> lineItems;
+  private List<CartLineItemJpaEntity> lineItems;
 }

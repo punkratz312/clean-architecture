@@ -31,11 +31,11 @@ final class ProductMapper {
     return jpaEntity;
   }
 
-    static Optional<Product> toModelEntityOptional(com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity jpaEntity) {
+    static Optional<Product> toModelEntityOptional(ProductJpaEntity jpaEntity) {
     return Optional.ofNullable(jpaEntity).map(ProductMapper::toModelEntity);
   }
 
-    static Product toModelEntity(com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity jpaEntity) {
+    static Product toModelEntity(ProductJpaEntity jpaEntity) {
     return new Product(
         new ProductId(jpaEntity.getId()),
         jpaEntity.getName(),
@@ -44,7 +44,7 @@ final class ProductMapper {
         jpaEntity.getItemsInStock());
   }
 
-    static List<Product> toModelEntities(List<com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity> jpaEntities) {
+    static List<Product> toModelEntities(List<ProductJpaEntity> jpaEntities) {
     return jpaEntities.stream().map(ProductMapper::toModelEntity).toList();
   }
 }
