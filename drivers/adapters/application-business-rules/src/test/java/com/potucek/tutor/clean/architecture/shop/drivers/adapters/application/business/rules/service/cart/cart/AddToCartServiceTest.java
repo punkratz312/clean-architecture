@@ -1,16 +1,17 @@
-//package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.cart;
+//package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart;
 //
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.service.cart.AddToCartService;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.cart.Cart;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.cart
+//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.AddToCartService;
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart
+// .Cart;
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart
 // .NotEnoughItemsInStockException;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.customer
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer
 // .CustomerId;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.product
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product
 // .Product;
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.in.cart.ProductNotFoundException;
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
+//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.ProductNotFoundException;
+//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
+//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
 //import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 //import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;

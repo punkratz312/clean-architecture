@@ -7,10 +7,11 @@
 //import static io.restassured.RestAssured.given;
 //import static jakarta.ws.rs.core.Response.Status.NO_CONTENT;
 //
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.cart.Cart;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.cart
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart
+// .Cart;
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart
 // .NotEnoughItemsInStockException;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.customer
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer
 // .CustomerId;
 //import io.restassured.response.Response;
 //import org.junit.jupiter.api.MethodOrderer;

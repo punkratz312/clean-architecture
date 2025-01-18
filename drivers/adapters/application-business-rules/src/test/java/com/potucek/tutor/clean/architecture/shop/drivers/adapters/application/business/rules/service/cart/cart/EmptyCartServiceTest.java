@@ -1,8 +1,8 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.cart;
+package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart;
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.service.cart.EmptyCartService;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.customer.CustomerId;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.EmptyCartService;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
 import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.mock;

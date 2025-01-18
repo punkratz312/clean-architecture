@@ -1,6 +1,6 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.in.product;
+package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.product;
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.product.Product;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
 
 import java.util.List;
 

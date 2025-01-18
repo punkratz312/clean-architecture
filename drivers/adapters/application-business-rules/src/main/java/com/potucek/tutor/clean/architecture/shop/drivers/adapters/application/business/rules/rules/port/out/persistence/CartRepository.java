@@ -1,7 +1,7 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence;
+package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence;
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.cart.Cart;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.customer.CustomerId;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
 
 import java.util.Optional;
 

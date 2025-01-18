@@ -1,15 +1,15 @@
 package com.potucek.sap.tutor.clean.architecture.shop.drivers.adapters.application.service.product;
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.service.product.FindProductsService;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.product.Product;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.product.FindProductsService;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.money.TestMoneyFactory.euros;
-import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.product.TestProductFactory.createTestProduct;
+import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.money.TestMoneyFactory.euros;
+import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.TestProductFactory.createTestProduct;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.mockito.Mockito.mock;

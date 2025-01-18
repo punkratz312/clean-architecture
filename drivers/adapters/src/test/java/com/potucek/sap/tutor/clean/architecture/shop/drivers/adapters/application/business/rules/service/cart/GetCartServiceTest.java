@@ -1,18 +1,18 @@
 package com.potucek.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart;
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.service.cart.GetCartService;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.cart.Cart;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.cart.NotEnoughItemsInStockException;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.customer.CustomerId;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.product.Product;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.GetCartService;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.Product;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.util.Optional;
 
-import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.money.TestMoneyFactory.euros;
-import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.product.TestProductFactory.createTestProduct;
+import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.money.TestMoneyFactory.euros;
+import static com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product.TestProductFactory.createTestProduct;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 

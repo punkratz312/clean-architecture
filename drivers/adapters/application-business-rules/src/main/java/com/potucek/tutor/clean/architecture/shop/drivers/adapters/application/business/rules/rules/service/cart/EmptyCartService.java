@@ -1,8 +1,8 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.service.cart;
+package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart;
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.customer.CustomerId;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.in.cart.EmptyCartUseCase;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
+import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer.CustomerId;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.EmptyCartUseCase;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
 
 import java.util.Objects;
 

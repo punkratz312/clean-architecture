@@ -163,6 +163,10 @@
                 <configuration>
                     <outputFilename>entity-relationship.plantuml</outputFilename>
                     <outputDirectory>${project.basedir}</outputDirectory>
+                    <additionalPlantUmlConfigs>
+                        <additionalPlantUmlConfig>left to right direction</additionalPlantUmlConfig>
+                        <additionalPlantUmlConfig>skinparam linetype ortho</additionalPlantUmlConfig>
+                    </additionalPlantUmlConfigs>
                     <scanPackages>
                         <scanPackage>com.potucek.tutor.clean.architecture.shop</scanPackage>
                     </scanPackages>

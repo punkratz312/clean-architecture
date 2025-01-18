@@ -1,8 +1,8 @@
-//package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.cart;
+//package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart;
 //
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.rules.service.product.FindProductsService;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.rules.product
+//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.product.FindProductsService;
+//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product
 // .Product;
 //import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 //import org.junit.jupiter.api.Test;
