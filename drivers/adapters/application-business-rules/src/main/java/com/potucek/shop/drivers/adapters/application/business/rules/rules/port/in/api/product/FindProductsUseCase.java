@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.product;
 
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
 
 import java.util.List;
 

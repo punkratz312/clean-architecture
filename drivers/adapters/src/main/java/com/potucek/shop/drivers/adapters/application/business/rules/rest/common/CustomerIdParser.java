@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.rest.common;
 
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.customer.CustomerId;
 
 public final class CustomerIdParser {
 

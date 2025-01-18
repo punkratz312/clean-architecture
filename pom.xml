@@ -156,39 +156,39 @@
             <!--                    </execution>-->
             <!--                </executions>-->
             <!--            </plugin>-->
-            <plugin>
-                <artifactId>plantuml-generator-maven-plugin</artifactId>
-                <groupId>de.elnarion.maven</groupId>
-                <version>3.0.1</version>
-                <configuration>
-                    <outputFilename>entity-relationship.plantuml</outputFilename>
-                    <outputDirectory>${project.basedir}</outputDirectory>
-                    <additionalPlantUmlConfigs>
-                        <additionalPlantUmlConfig>left to right direction</additionalPlantUmlConfig>
-                        <additionalPlantUmlConfig>skinparam linetype ortho</additionalPlantUmlConfig>
-                    </additionalPlantUmlConfigs>
-                    <scanPackages>
-                        <scanPackage>com.potucek.shop</scanPackage>
-                    </scanPackages>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>generate-simple-diagram</id>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <phase>generate-test-sources</phase>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
-
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>plantuml-generator-maven-plugin</artifactId>
+                    <groupId>de.elnarion.maven</groupId>
+                    <version>3.0.1</version>
+                    <configuration>
+                        <outputFilename>entity-relationship.plantuml</outputFilename>
+                        <outputDirectory>${project.basedir}</outputDirectory>
+                        <outputDirectory>${project.basedir}</outputDirectory>
+                        <additionalPlantUmlConfigs>
+                            <additionalPlantUmlConfig>left to right direction</additionalPlantUmlConfig>
+                            <additionalPlantUmlConfig>skinparam linetype ortho</additionalPlantUmlConfig>
+                        </additionalPlantUmlConfigs>
+                        <scanPackages>
+                            <scanPackage>com.potucek.shop</scanPackage>
+                        </scanPackages>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>generate-simple-diagram</id>
+                            <goals>
+                                <goal>generate</goal>
+                            </goals>
+                            <phase>generate-test-sources</phase>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>

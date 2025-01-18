@@ -1,12 +1,12 @@
 package com.potucek.clean.architecture.shop.adapter.in.rest.cart;
 
-import static jakarta.ws.rs.core.Response.Status.OK;
-import static org.assertj.core.api.Assertions.assertThat;
-
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.CartLineItem;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+
+import static jakarta.ws.rs.core.Response.Status.OK;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public final class CartsControllerAssertions {
 

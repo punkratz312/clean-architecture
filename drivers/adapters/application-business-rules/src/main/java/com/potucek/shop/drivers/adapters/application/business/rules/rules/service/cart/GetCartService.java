@@ -1,9 +1,9 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.rules.service.cart;
 
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.customer.CustomerId;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.GetCartUseCase;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
 
 import java.util.Objects;
 

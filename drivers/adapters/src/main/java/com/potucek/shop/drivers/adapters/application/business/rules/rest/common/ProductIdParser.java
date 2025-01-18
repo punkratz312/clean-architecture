@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.rest.common;
 
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
 import jakarta.ws.rs.core.Response;
 
 import static com.potucek.shop.drivers.adapters.application.business.rules.rest.common.ControllerCommons.clientErrorException;

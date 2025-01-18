@@ -1,13 +1,13 @@
 //package com.potucek.shop.drivers.adapters.application.business.rules.service.cart;
 //
 //import com.potucek.shop.drivers.adapters.application.business.rules.service.cart.AddToCartService;
-//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart
+//import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart
 // .Cart;
-//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart
+//import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart
 // .NotEnoughItemsInStockException;
-//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer
+//import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer
 // .CustomerId;
-//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product
+//import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product
 // .Product;
 //import com.potucek.shop.drivers.adapters.application.business.rules.product.api.in.port.rules.ProductNotFoundException;
 //import com.potucek.shop.drivers.adapters.application.business.rules.persistence.out.port.rules.CartRepository;

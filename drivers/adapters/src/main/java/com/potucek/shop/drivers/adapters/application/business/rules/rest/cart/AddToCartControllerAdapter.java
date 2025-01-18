@@ -1,9 +1,9 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.rest.cart;
 
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.customer.CustomerId;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.AddToCartUseCase;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
 
 import static com.potucek.shop.drivers.adapters.application.business.rules.rest.common.CustomerIdParser.parseCustomerId;
 import static com.potucek.shop.drivers.adapters.application.business.rules.rest.common.ProductIdParser.parseProductId;

@@ -1,9 +1,9 @@
 package com.potucek.clean.architecture.shop.adapter.out.persistence;
 
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.product.ProductId;
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
-import com.poutcek.shop.drivers.out.cart.persistence.DemoProducts;
+import com.potucek.shop.drivers.drivers.out.cart.persistence.DemoProducts;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,7 +1,7 @@
 package com.potucek.shop.drivers.adapters.application.business.rules.rest.cart;
 
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
-import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.cart.Cart;
+import com.potucek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.model.money.Money;
 
 import java.util.List;
 

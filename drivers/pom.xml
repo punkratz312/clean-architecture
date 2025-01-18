@@ -95,6 +95,10 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <artifactId>plantuml-generator-maven-plugin</artifactId>
+                <groupId>de.elnarion.maven</groupId>
+            </plugin>
         </plugins>
     </build>
 </project>
