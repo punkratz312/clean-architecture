@@ -1,9 +1,11 @@
-package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.common;
+package com.poutcek.
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+.shop.drivers.in.rest.cart.common;
+
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
 import jakarta.ws.rs.core.Response;
 
-import static com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.common.ControllerCommons.clientErrorException;
+import static com.poutcek.shop.drivers.in.rest.cart.common.ControllerCommons.clientErrorException;
 
 /**
  * A parser for product IDs, throwing a {@link jakarta.ws.rs.ClientErrorException} for invalid

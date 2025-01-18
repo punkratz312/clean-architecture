@@ -1,9 +1,11 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
+package com.potucek.
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
-import com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.DemoProducts;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+.shop.drivers.in.rest.cart.persistence.jpa;
+
+import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.shop.drivers.in.rest.cart.persistence.DemoProducts;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.TypedQuery;

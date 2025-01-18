@@ -1,4 +1,4 @@
-package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.common;
+package com.poutcek.shop.drivers.in.rest.cart.common;
 
 import jakarta.ws.rs.ClientErrorException;
 import jakarta.ws.rs.core.Response;

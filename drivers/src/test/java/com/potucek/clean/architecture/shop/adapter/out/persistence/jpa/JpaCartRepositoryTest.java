@@ -1,9 +1,9 @@
 package com.potucek.clean.architecture.shop.adapter.out.persistence.jpa;
 
 import com.potucek.clean.architecture.shop.adapter.out.persistence.AbstractCartRepositoryTest;
-import com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa.EntityManagerFactoryFactory;
-import com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa.JpaCartRepository;
-import com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa.JpaProductRepository;
+import com.potucek.shop.drivers.in.rest.cart.persistence.jpa.EntityManagerFactoryFactory;
+import com.potucek.shop.drivers.in.rest.cart.persistence.jpa.JpaCartRepository;
+import com.potucek.shop.drivers.in.rest.cart.persistence.jpa.JpaProductRepository;
 import jakarta.persistence.EntityManagerFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

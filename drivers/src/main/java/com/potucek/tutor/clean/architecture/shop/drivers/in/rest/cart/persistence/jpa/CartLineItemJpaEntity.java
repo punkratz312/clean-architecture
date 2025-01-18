@@ -1,4 +1,6 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
+package com.potucek.
+
+.shop.drivers.in.rest.cart.persistence.jpa;
 
 import jakarta.persistence.*;
 import lombok.Getter;

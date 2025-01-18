@@ -1,4 +1,4 @@
-//package com.potucek.tutor.clean.architecture.shop.bootstrap.archunit;
+//package com.potucek.shop.bootstrap.archunit;
 //
 //import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 //

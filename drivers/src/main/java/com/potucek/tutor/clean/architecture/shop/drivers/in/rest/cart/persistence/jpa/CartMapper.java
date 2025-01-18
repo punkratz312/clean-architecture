@@ -1,8 +1,8 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
+package com.potucek.shop.drivers.in.rest.cart.persistence.jpa;
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
 
 import java.util.Optional;
 

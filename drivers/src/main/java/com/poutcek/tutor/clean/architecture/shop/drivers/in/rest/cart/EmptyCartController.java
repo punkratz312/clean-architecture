@@ -1,14 +1,14 @@
-package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart;
+package com.poutcek.shop.drivers.in.rest.cart;
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.api.cart.EmptyCartUseCase;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.in.api.cart.EmptyCartUseCase;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-import static com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.common.CustomerIdParser.parseCustomerId;
+import static com.poutcek.shop.drivers.in.rest.cart.common.CustomerIdParser.parseCustomerId;
 
 /**
  * REST controller for all shopping cart use cases.

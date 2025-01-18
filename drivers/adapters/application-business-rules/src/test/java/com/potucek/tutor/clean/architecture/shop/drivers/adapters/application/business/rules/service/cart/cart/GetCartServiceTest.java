@@ -1,15 +1,15 @@
-//package com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart;
+//package com.potucek.shop.drivers.adapters.application.business.rules.service.cart;
 //
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.GetCartService;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart
+//import com.potucek.shop.drivers.adapters.application.business.rules.cart.service.rules.GetCartService;
+//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart
 // .Cart;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart
+//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.cart
 // .NotEnoughItemsInStockException;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer
+//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.customer
 // .CustomerId;
-//import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product
+//import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product
 // .Product;
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
+//import com.potucek.shop.drivers.adapters.application.business.rules.persistence.out.port.rules.CartRepository;
 //import org.junit.jupiter.api.Test;
 //import org.mockito.Mockito;
 //

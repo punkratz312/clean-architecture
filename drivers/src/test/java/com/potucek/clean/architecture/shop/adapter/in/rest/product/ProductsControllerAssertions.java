@@ -1,6 +1,6 @@
 package com.potucek.clean.architecture.shop.adapter.in.rest.product;
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 

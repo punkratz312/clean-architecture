@@ -1,8 +1,8 @@
-package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart;
+package com.poutcek.shop.drivers.in.rest.cart;
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 
 /**
  * Model class for returning a shopping cart line item via REST API.

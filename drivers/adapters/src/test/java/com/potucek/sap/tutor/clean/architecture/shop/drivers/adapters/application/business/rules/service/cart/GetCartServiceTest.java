@@ -1,11 +1,11 @@
-package com.potucek.sap.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart;
+package com.potucek.sap..shop.drivers.adapters.application.business.rules.service.cart;
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.cart.GetCartService;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.rules.service.cart.GetCartService;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 

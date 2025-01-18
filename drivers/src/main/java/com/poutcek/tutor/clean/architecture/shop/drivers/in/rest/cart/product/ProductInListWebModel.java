@@ -1,8 +1,10 @@
-package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart.product;
+package com.poutcek.
+
+.shop.drivers.in.rest.cart.product;
 
 
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 
 /**
  * Model class for returning a product (in a list ... that's without description) via REST API.

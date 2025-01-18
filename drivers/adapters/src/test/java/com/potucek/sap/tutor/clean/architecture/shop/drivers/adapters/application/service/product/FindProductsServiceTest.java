@@ -1,8 +1,10 @@
-package com.potucek.sap.tutor.clean.architecture.shop.drivers.adapters.application.service.product;
+package com.potucek.sap.
 
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
-import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.service.product.FindProductsService;
-import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
+.shop.drivers.adapters.application.service.product;
+
+import com.potucek.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.shop.drivers.adapters.application.business.rules.service.product.FindProductsService;
+import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import org.junit.jupiter.api.Test;
 
