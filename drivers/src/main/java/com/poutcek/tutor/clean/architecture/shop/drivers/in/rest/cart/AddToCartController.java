@@ -1,6 +1,7 @@
 package com.poutcek.tutor.clean.architecture.shop.drivers.in.rest.cart;
 
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.api.cart.AddToCartUseCase;
+import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.api.product.ProductNotFoundException;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.NotEnoughItemsInStockException;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.customer.CustomerId;
@@ -41,7 +42,7 @@ public class AddToCartController {
       Cart cart = addToCartUseCase.addToCart(customerId, productId, quantity);
       return CartWebModel.fromDomainModel(cart);
     } catch (
-            com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.ProductNotFoundException e) {
+            ProductNotFoundException e) {
       throw clientErrorException(
           Response.Status.BAD_REQUEST, "The requested product does not exist");
     } catch (NotEnoughItemsInStockException e) {

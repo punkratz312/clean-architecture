@@ -9,7 +9,7 @@
 // .CustomerId;
 //import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.product
 // .Product;
-//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.cart.ProductNotFoundException;
+//import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.in.api.product.ProductNotFoundException;
 //import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
 //import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
 //import org.assertj.core.api.ThrowableAssert.ThrowingCallable;

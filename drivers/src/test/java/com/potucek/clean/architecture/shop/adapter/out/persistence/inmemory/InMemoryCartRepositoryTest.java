@@ -1,8 +1,8 @@
 package com.potucek.clean.architecture.shop.adapter.out.persistence.inmemory;
 
 import com.potucek.clean.architecture.shop.adapter.out.persistence.AbstractCartRepositoryTest;
-import com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.inmemory.InMemoryCartRepository;
-import com.potucek.tutor.clean.architecture.shop.adapter.in.rest.cart.persistence.inmemory.InMemoryProductRepository;
+import com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.InMemoryCartRepository;
+import com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.InMemoryProductRepository;.inmemory.InMemoryProductRepository;
 
 class InMemoryCartRepositoryTest
     extends AbstractCartRepositoryTest<InMemoryCartRepository, InMemoryProductRepository> {
