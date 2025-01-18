@@ -18,14 +18,14 @@
             <version>${project.version}</version>
         </dependency>
         <!-- To use the "attached test JAR" from the "model" module -->
-        <dependency>
-            <groupId>com.potucek.</groupId>
-            <artifactId>enterprise-business-rules</artifactId>
-            <version>${project.version}</version>
-            <classifier>tests</classifier>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.potucek.</groupId>-->
+        <!--            <artifactId>enterprise-business-rules</artifactId>-->
+        <!--            <version>${project.version}</version>-->
+        <!--            <classifier>tests</classifier>-->
+        <!--            <type>test-jar</type>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
