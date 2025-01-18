@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.in.rest.cart.persistence.jpa;
+package com.poutcek.shop.drivers.out.cart.persistence.persistence.jpa;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.CartRepository;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
@@ -25,7 +25,7 @@ public class JpaCartRepository implements CartRepository {
   public void save(Cart cart) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
       entityManager.getTransaction().begin();
-        entityManager.merge(com.potucek.shop.drivers.in.rest.cart.persistence.jpa.CartMapper.toJpaEntity(cart));
+      entityManager.merge(CartMapper.toJpaEntity(cart));
       entityManager.getTransaction().commit();
     }
   }
@@ -33,10 +33,10 @@ public class JpaCartRepository implements CartRepository {
   @Override
   public Optional<Cart> findByCustomerId(CustomerId customerId) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-        com.potucek.shop.drivers.in.rest.cart.persistence.jpa.CartJpaEntity cartJpaEntity =
-                entityManager.find(com.potucek.shop.drivers.in.rest.cart.persistence.jpa.CartJpaEntity.class,
+      CartJpaEntity cartJpaEntity =
+              entityManager.find(CartJpaEntity.class,
                         customerId.value());
-        return com.potucek.shop.drivers.in.rest.cart.persistence.jpa.CartMapper.toModelEntityOptional(cartJpaEntity);
+      return CartMapper.toModelEntityOptional(cartJpaEntity);
     }
   }
 
@@ -45,8 +45,8 @@ public class JpaCartRepository implements CartRepository {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
       entityManager.getTransaction().begin();
 
-        com.potucek.shop.drivers.in.rest.cart.persistence.jpa.CartJpaEntity cartJpaEntity =
-                entityManager.find(com.potucek.shop.drivers.in.rest.cart.persistence.jpa.CartJpaEntity.class,
+      CartJpaEntity cartJpaEntity =
+              entityManager.find(CartJpaEntity.class,
                         customerId.value());
 
       if (cartJpaEntity != null) {

@@ -1,9 +1,10 @@
-package com.potucek.shop.drivers.in.rest.cart.persistence.jpa;
+package com.potucek.shop.drivers.out.cart.persistence.jpa;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
-import com.potucek.shop.drivers.in.rest.cart.persistence.DemoProducts;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+import com.poutcek.shop.drivers.out.cart.persistence.persistence.DemoProducts;
+import com.poutcek.shop.drivers.out.cart.persistence.persistence.jpa.ProductJpaEntity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.TypedQuery;
@@ -33,7 +34,7 @@ public class JpaProductRepository implements ProductRepository {
   public void save(Product product) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
       entityManager.getTransaction().begin();
-      entityManager.merge(com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductMapper.toJpaEntity(product));
+        entityManager.merge(ProductMapper.toJpaEntity(product));
       entityManager.getTransaction().commit();
     }
   }
@@ -41,26 +42,26 @@ public class JpaProductRepository implements ProductRepository {
   @Override
   public Optional<Product> findById(ProductId productId) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-        com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductJpaEntity jpaEntity =
-                entityManager.find(com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductJpaEntity.class,
+        ProductJpaEntity jpaEntity =
+                entityManager.find(ProductJpaEntity.class,
                         productId.value());
-      return com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductMapper.toModelEntityOptional(jpaEntity);
+        return ProductMapper.toModelEntityOptional(jpaEntity);
     }
   }
 
   @Override
   public List<Product> findByNameOrDescription(String queryString) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-        TypedQuery<com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductJpaEntity> query =
+        TypedQuery<ProductJpaEntity> query =
           entityManager
               .createQuery(
                   "from ProductJpaEntity where name like :query or description like :query",
-                      com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductJpaEntity.class)
+                      ProductJpaEntity.class)
               .setParameter("query", "%" + queryString + "%");
 
-        List<com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductJpaEntity> entities = query.getResultList();
+        List<ProductJpaEntity> entities = query.getResultList();
 
-      return com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductMapper.toModelEntities(entities);
+        return ProductMapper.toModelEntities(entities);
     }
   }
 }

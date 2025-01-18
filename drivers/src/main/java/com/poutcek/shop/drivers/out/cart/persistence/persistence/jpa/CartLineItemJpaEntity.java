@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.in.rest.cart.persistence.jpa;
+package com.poutcek.shop.drivers.out.cart.persistence.persistence.jpa;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -17,10 +17,11 @@ public class CartLineItemJpaEntity {
 
   @Id @GeneratedValue private Integer id;
 
-  @ManyToOne private com.potucek.shop.drivers.in.rest.cart.persistence.jpa.CartJpaEntity cart;
+  @ManyToOne
+  private CartJpaEntity cart;
 
     @ManyToOne
-    private com.potucek.shop.drivers.in.rest.cart.persistence.jpa.ProductJpaEntity product;
+    private ProductJpaEntity product;
 
   private int quantity;
 }

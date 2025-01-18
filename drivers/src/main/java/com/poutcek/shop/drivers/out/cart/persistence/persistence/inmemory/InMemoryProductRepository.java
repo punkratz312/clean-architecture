@@ -1,8 +1,9 @@
-package com.poutcek.shop.drivers.in.rest.cart.persistence.inmemory;
+package com.poutcek.shop.drivers.out.cart.persistence.persistence.inmemory;
 
 import com.potucek.shop.drivers.adapters.application.business.rules.rules.port.out.persistence.ProductRepository;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
+import com.poutcek.shop.drivers.out.cart.persistence.persistence.DemoProducts;
 
 import java.util.List;
 import java.util.Locale;
@@ -24,7 +25,7 @@ public class InMemoryProductRepository implements ProductRepository {
   }
 
   private void createDemoProducts() {
-    com.potucek.shop.drivers.in.rest.cart.persistence.DemoProducts.DEMO_PRODUCTS.forEach(this::save);
+      DemoProducts.DEMO_PRODUCTS.forEach(this::save);
   }
 
   @Override

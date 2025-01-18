@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.in.rest.cart.persistence.jpa;
+package com.poutcek.shop.drivers.out.cart.persistence.persistence.jpa;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

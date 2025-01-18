@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.in.rest.cart.persistence;
+package com.poutcek.shop.drivers.out.cart.persistence.persistence;
 
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.money.Money;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;

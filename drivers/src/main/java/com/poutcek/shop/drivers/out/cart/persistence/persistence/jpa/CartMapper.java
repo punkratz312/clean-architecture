@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.in.rest.cart.persistence.jpa;
+package com.poutcek.shop.drivers.out.cart.persistence.persistence.jpa;
 
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
 import com.poutcek.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
