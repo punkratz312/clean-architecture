@@ -1,11 +1,10 @@
 package com.potucek.clean.architecture.shop.adapter.out.persistence.inmemory;
 
 import com.potucek.clean.architecture.shop.adapter.out.persistence.AbstractCartRepositoryTest;
-import com.poutcek.shop.drivers.out.cart.persistence.InMemoryCartRepository;
-import com.poutcek.shop.drivers.out.cart.persistence.InMemoryProductRepository;.inmemory.InMemoryProductRepository;
+import com.poutcek.shop.drivers.out.cart.persistence.inmemory.InMemoryCartRepository;
+import com.poutcek.shop.drivers.out.cart.persistence.inmemory.InMemoryProductRepository;
 
-class InMemoryCartRepositoryTest
-    extends AbstractCartRepositoryTest<InMemoryCartRepository, InMemoryProductRepository> {
+class InMemoryCartRepositoryTest extends AbstractCartRepositoryTest<InMemoryCartRepository, InMemoryProductRepository> {
 
   @Override
   protected InMemoryCartRepository createCartRepository() {

@@ -15,13 +15,15 @@ import lombok.Setter;
 @Setter
 public class CartLineItemJpaEntity {
 
-  @Id @GeneratedValue private Integer id;
-
-  @ManyToOne
-  private com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity cart;
+    @Id
+    @GeneratedValue
+    private Integer id;
 
     @ManyToOne
-    private com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity product;
+    private CartJpaEntity cart;
 
-  private int quantity;
+    @ManyToOne
+    private ProductJpaEntity product;
+
+    private int quantity;
 }

@@ -25,7 +25,7 @@ public class JpaCartRepository implements CartRepository {
   public void save(Cart cart) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
       entityManager.getTransaction().begin();
-      entityManager.merge(com.poutcek.shop.drivers.out.cart.persistence.CartMapper.toJpaEntity(cart));
+        entityManager.merge(CartMapper.toJpaEntity(cart));
       entityManager.getTransaction().commit();
     }
   }
@@ -33,10 +33,10 @@ public class JpaCartRepository implements CartRepository {
   @Override
   public Optional<Cart> findByCustomerId(CustomerId customerId) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-      com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity cartJpaEntity =
-              entityManager.find(com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity.class,
+        CartJpaEntity cartJpaEntity =
+                entityManager.find(CartJpaEntity.class,
                         customerId.value());
-      return com.poutcek.shop.drivers.out.cart.persistence.CartMapper.toModelEntityOptional(cartJpaEntity);
+        return CartMapper.toModelEntityOptional(cartJpaEntity);
     }
   }
 
@@ -45,8 +45,8 @@ public class JpaCartRepository implements CartRepository {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
       entityManager.getTransaction().begin();
 
-      com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity cartJpaEntity =
-              entityManager.find(com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity.class,
+        CartJpaEntity cartJpaEntity =
+                entityManager.find(CartJpaEntity.class,
                         customerId.value());
 
       if (cartJpaEntity != null) {

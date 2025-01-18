@@ -15,8 +15,8 @@ final class CartMapper {
 
   private CartMapper() {}
 
-  static com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity toJpaEntity(Cart cart) {
-    com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity cartJpaEntity = new com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity();
+    static CartJpaEntity toJpaEntity(Cart cart) {
+        CartJpaEntity cartJpaEntity = new CartJpaEntity();
     cartJpaEntity.setCustomerId(cart.id().value());
 
     cartJpaEntity.setLineItems(
@@ -25,12 +25,12 @@ final class CartMapper {
     return cartJpaEntity;
   }
 
-  static com.poutcek.shop.drivers.out.cart.persistence.CartLineItemJpaEntity toJpaEntity(com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity cartJpaEntity, CartLineItem lineItem) {
-    com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity productJpaEntity =
-            new com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity();
+    static CartLineItemJpaEntity toJpaEntity(CartJpaEntity cartJpaEntity, CartLineItem lineItem) {
+        ProductJpaEntity productJpaEntity =
+                new ProductJpaEntity();
     productJpaEntity.setId(lineItem.product().id().value());
 
-    com.poutcek.shop.drivers.out.cart.persistence.CartLineItemJpaEntity entity = new com.poutcek.shop.drivers.out.cart.persistence.CartLineItemJpaEntity();
+        CartLineItemJpaEntity entity = new CartLineItemJpaEntity();
     entity.setCart(cartJpaEntity);
     entity.setProduct(productJpaEntity);
     entity.setQuantity(lineItem.quantity());
@@ -38,7 +38,7 @@ final class CartMapper {
     return entity;
   }
 
-  static Optional<Cart> toModelEntityOptional(com.poutcek.shop.drivers.out.cart.persistence.CartJpaEntity cartJpaEntity) {
+    static Optional<Cart> toModelEntityOptional(CartJpaEntity cartJpaEntity) {
     if (cartJpaEntity == null) {
       return Optional.empty();
     }
@@ -46,9 +46,9 @@ final class CartMapper {
     CustomerId customerId = new CustomerId(cartJpaEntity.getCustomerId());
     Cart cart = new Cart(customerId);
 
-    for (com.poutcek.shop.drivers.out.cart.persistence.CartLineItemJpaEntity lineItemJpaEntity : cartJpaEntity.getLineItems()) {
+        for (CartLineItemJpaEntity lineItemJpaEntity : cartJpaEntity.getLineItems()) {
       cart.putProductIgnoringNotEnoughItemsInStock(
-              com.poutcek.shop.drivers.out.cart.persistence.ProductMapper.toModelEntity(lineItemJpaEntity.getProduct()),
+              ProductMapper.toModelEntity(lineItemJpaEntity.getProduct()),
           lineItemJpaEntity.getQuantity());
     }
 

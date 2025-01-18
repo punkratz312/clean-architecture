@@ -17,9 +17,9 @@ final class ProductMapper {
 
   private ProductMapper() {}
 
-    static com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity toJpaEntity(Product product) {
-        com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity jpaEntity =
-                new com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity();
+    static ProductJpaEntity toJpaEntity(Product product) {
+        ProductJpaEntity jpaEntity =
+                new ProductJpaEntity();
 
     jpaEntity.setId(product.id().value());
     jpaEntity.setName(product.name());
@@ -31,11 +31,11 @@ final class ProductMapper {
     return jpaEntity;
   }
 
-    static Optional<Product> toModelEntityOptional(com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity jpaEntity) {
+    static Optional<Product> toModelEntityOptional(ProductJpaEntity jpaEntity) {
     return Optional.ofNullable(jpaEntity).map(ProductMapper::toModelEntity);
   }
 
-    static Product toModelEntity(com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity jpaEntity) {
+    static Product toModelEntity(ProductJpaEntity jpaEntity) {
     return new Product(
         new ProductId(jpaEntity.getId()),
         jpaEntity.getName(),
@@ -44,7 +44,7 @@ final class ProductMapper {
         jpaEntity.getItemsInStock());
   }
 
-    static List<Product> toModelEntities(List<com.poutcek.shop.drivers.out.cart.persistence.ProductJpaEntity> jpaEntities) {
+    static List<Product> toModelEntities(List<ProductJpaEntity> jpaEntities) {
     return jpaEntities.stream().map(ProductMapper::toModelEntity).toList();
   }
 }
