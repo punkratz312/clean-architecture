@@ -1,6 +1,7 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.
+package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
 
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.ProductRepository;
+import com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.DemoProducts;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.Product;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.product.ProductId;
 import jakarta.persistence.EntityManager;
@@ -40,7 +41,9 @@ public class JpaProductRepository implements ProductRepository {
   @Override
   public Optional<Product> findById(ProductId productId) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-      ProductJpaEntity jpaEntity = entityManager.find(ProductJpaEntity.class, productId.value());
+        ProductJpaEntity jpaEntity =
+                entityManager.find(com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity.class,
+                        productId.value());
       return ProductMapper.toModelEntityOptional(jpaEntity);
     }
   }
@@ -48,14 +51,14 @@ public class JpaProductRepository implements ProductRepository {
   @Override
   public List<Product> findByNameOrDescription(String queryString) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-      TypedQuery<ProductJpaEntity> query =
+        TypedQuery<com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity> query =
           entityManager
               .createQuery(
                   "from ProductJpaEntity where name like :query or description like :query",
-                  ProductJpaEntity.class)
+                      ProductJpaEntity.class)
               .setParameter("query", "%" + queryString + "%");
 
-      List<ProductJpaEntity> entities = query.getResultList();
+        List<com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.ProductJpaEntity> entities = query.getResultList();
 
       return ProductMapper.toModelEntities(entities);
     }

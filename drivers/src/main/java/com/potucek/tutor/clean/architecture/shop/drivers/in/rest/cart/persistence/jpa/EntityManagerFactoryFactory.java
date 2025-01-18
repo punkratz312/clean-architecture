@@ -1,4 +1,4 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.
+package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

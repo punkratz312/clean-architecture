@@ -1,4 +1,4 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.
+package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,5 +20,5 @@ public class CartJpaEntity {
   @Id private int customerId;
 
   @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
-  private List<CartLineItemJpaEntity> lineItems;
+  private List<com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.CartLineItemJpaEntity> lineItems;
 }

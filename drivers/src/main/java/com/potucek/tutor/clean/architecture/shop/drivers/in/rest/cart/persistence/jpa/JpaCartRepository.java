@@ -1,4 +1,4 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.
+package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
 
 import com.potucek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.port.out.persistence.CartRepository;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
@@ -25,7 +25,7 @@ public class JpaCartRepository implements CartRepository {
   public void save(Cart cart) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
       entityManager.getTransaction().begin();
-      entityManager.merge(CartMapper.toJpaEntity(cart));
+        entityManager.merge(com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.CartMapper.toJpaEntity(cart));
       entityManager.getTransaction().commit();
     }
   }
@@ -33,8 +33,10 @@ public class JpaCartRepository implements CartRepository {
   @Override
   public Optional<Cart> findByCustomerId(CustomerId customerId) {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
-      CartJpaEntity cartJpaEntity = entityManager.find(CartJpaEntity.class, customerId.value());
-      return CartMapper.toModelEntityOptional(cartJpaEntity);
+        CartJpaEntity cartJpaEntity =
+                entityManager.find(com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.CartJpaEntity.class,
+                        customerId.value());
+        return CartMapper.toModelEntityOptional(cartJpaEntity);
     }
   }
 
@@ -43,7 +45,9 @@ public class JpaCartRepository implements CartRepository {
     try (EntityManager entityManager = entityManagerFactory.createEntityManager()) {
       entityManager.getTransaction().begin();
 
-      CartJpaEntity cartJpaEntity = entityManager.find(CartJpaEntity.class, customerId.value());
+        CartJpaEntity cartJpaEntity =
+                entityManager.find(com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.CartJpaEntity.class,
+                        customerId.value());
 
       if (cartJpaEntity != null) {
         entityManager.remove(cartJpaEntity);

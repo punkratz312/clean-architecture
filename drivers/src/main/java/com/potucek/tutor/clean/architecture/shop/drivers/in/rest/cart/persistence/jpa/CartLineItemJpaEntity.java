@@ -1,4 +1,4 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.
+package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -19,7 +19,8 @@ public class CartLineItemJpaEntity {
 
   @ManyToOne private CartJpaEntity cart;
 
-  @ManyToOne private ProductJpaEntity product;
+    @ManyToOne
+    private ProductJpaEntity product;
 
   private int quantity;
 }

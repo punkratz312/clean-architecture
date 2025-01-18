@@ -1,4 +1,4 @@
-package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.
+package com.potucek.tutor.clean.architecture.shop.drivers.in.rest.cart.persistence.jpa;
 
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.Cart;
 import com.poutcek.tutor.clean.architecture.shop.drivers.adapters.application.business.rules.enterprise.business.rules.model.cart.CartLineItem;
@@ -26,7 +26,8 @@ final class CartMapper {
   }
 
   static CartLineItemJpaEntity toJpaEntity(CartJpaEntity cartJpaEntity, CartLineItem lineItem) {
-    ProductJpaEntity productJpaEntity = new ProductJpaEntity();
+    ProductJpaEntity productJpaEntity =
+            new ProductJpaEntity();
     productJpaEntity.setId(lineItem.product().id().value());
 
     CartLineItemJpaEntity entity = new CartLineItemJpaEntity();
@@ -47,7 +48,7 @@ final class CartMapper {
 
     for (CartLineItemJpaEntity lineItemJpaEntity : cartJpaEntity.getLineItems()) {
       cart.putProductIgnoringNotEnoughItemsInStock(
-          ProductMapper.toModelEntity(lineItemJpaEntity.getProduct()),
+              ProductMapper.toModelEntity(lineItemJpaEntity.getProduct()),
           lineItemJpaEntity.getQuantity());
     }
 
