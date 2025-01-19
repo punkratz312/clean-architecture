@@ -4,5 +4,5 @@ import java.util.Set;
 
 public interface HawkResourceCommand {
 
-    Set<Object> findAllHawks();
+    Set<String> findAllHawks();
 }

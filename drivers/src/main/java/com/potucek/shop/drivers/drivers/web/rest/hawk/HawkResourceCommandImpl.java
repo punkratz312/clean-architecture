@@ -7,7 +7,6 @@ import jakarta.ws.rs.Path;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Path("hawks")
@@ -17,7 +16,7 @@ public class HawkResourceCommandImpl implements HawkResourceCommand {
 
     @GET
     @Override
-    public Set<Object> findAllHawks() {
-        return hawkApplicationService.findAllHawks().stream().map(hawk -> new Object()).collect(Collectors.toSet());
+    public Set<String> findAllHawks() {
+        return hawkApplicationService.findAllHawks();
     }
 }
