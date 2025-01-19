@@ -9,9 +9,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>drivers</module>
-        <module>drivers/application-services</module>
-        <module>drivers/application-services/domain-services</module>
-        <module>drivers/application-services/domain-services/entities</module>
+        <module>drivers/core</module>
     </modules>
     <properties>
         <maven.compiler.source>20</maven.compiler.source>

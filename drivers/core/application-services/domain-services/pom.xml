@@ -11,7 +11,14 @@
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>entities</artifactId>
+    <artifactId>domain-services</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.potucek.</groupId>
+            <artifactId>entities</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <!-- To create an "attached test JAR" to be able to use this module's test classes in other modules -->
     <build>
