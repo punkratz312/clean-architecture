@@ -15,8 +15,4 @@ public interface HawkApplicationService {
      */
     Set<String> findAllHawksSortedByIUCNCategory();
 
-    void registerHawks(Set<String> hawks);
-
-    void registerHawk(Set<String> hawk);
-
 }

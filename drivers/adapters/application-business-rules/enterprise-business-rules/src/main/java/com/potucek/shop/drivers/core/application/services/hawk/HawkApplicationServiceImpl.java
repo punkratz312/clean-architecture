@@ -15,14 +15,4 @@ public class HawkApplicationServiceImpl implements HawkApplicationService {
     public Set<String> findAllHawksSortedByIUCNCategory() {
         return hawkRepoPort.findAllHawksSortedByIUCNCategory().stream().map(Object::toString).collect(Collectors.toSet());
     }
-
-    @Override
-    public void registerHawks(Set<String> hawks) {
-
-    }
-
-    @Override
-    public void registerHawk(Set<String> hawk) {
-
-    }
 }
