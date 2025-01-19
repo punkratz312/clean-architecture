@@ -1,7 +1,7 @@
 package com.potucek.shop.drivers.drivers.web.rest.hawk;
 
+import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.command.HawkResourceCommand;
 import com.potucek.shop.drivers.core.application.services.hawk.HawkApplicationService;
-import com.potucek.shop.drivers.core.application.services.hawk.port.command.HawkResourceCommand;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import lombok.RequiredArgsConstructor;

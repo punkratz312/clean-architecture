@@ -2,7 +2,7 @@ package com.potucek.shop.drivers;
 
 import com.potucek.shop.drivers.application.business.rules.registry.HawkDomainRepo;
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.Hawk;
-import com.potucek.shop.drivers.core.application.services.hawk.port.HawkRepoPort;
+import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.HawkRepoPort;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Set;

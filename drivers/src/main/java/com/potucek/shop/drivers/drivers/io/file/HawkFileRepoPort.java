@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.drivers.io.file;
 
-import com.potucek.shop.drivers.core.application.services.hawk.port.HawkRepoPort;
+import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.HawkRepoPort;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;

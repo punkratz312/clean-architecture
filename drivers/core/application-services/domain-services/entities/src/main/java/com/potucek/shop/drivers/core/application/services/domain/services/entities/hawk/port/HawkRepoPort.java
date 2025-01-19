@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.core.application.services.hawk.port;
+package com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port;
 
 import java.util.Set;
 
