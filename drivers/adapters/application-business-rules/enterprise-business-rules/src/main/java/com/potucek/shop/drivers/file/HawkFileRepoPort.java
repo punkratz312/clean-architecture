@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.io.file;
+package com.potucek.shop.drivers.file;
 
 import com.potucek.shop.drivers.core.application.services.hawk.port.HawkRepoPort;
 import lombok.SneakyThrows;
