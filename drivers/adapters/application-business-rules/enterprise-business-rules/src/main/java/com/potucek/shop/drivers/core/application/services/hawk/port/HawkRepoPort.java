@@ -1,8 +1,8 @@
-package com.potucek.shop.drivers.core.application.services.hawk;
+package com.potucek.shop.drivers.core.application.services.hawk.port;
 
 import java.util.Set;
 
-public interface HawkRepo {
+public interface HawkRepoPort {
 
     /**
      * Find all hawks (eagles, buzzards, vultures, kites, etc), sort them according to their IUCN Category and print them (System.out

@@ -1,12 +1,12 @@
-package com.potucek.shop.drivers.core.port.cloud.aws.s3.hawk;
+package com.potucek.shop.drivers.core.port.cloud.aws.dynamo.hawk;
 
-import com.potucek.shop.drivers.core.application.services.hawk.HawkRepo;
+import com.potucek.shop.drivers.core.application.services.hawk.HawkRepoPort;
 import lombok.SneakyThrows;
 
 import java.util.Collections;
 import java.util.Set;
 
-public class HawkS3Repo implements HawkRepo {
+public class HawkDynamoRepoPort implements HawkRepoPort {
 
     @SneakyThrows
     @Override

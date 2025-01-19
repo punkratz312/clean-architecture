@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.core.port.file.hawk;
 
-import com.potucek.shop.drivers.core.application.services.hawk.HawkRepo;
+import com.potucek.shop.drivers.core.application.services.hawk.HawkRepoPort;
 import lombok.SneakyThrows;
 
 import java.nio.file.Files;
@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class HawkFileRepo implements HawkRepo {
+public class HawkFileRepoPort implements HawkRepoPort {
 
     @SneakyThrows
     @Override
