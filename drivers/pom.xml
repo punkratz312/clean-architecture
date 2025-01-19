@@ -14,7 +14,7 @@
         <!-- Internal -->
         <dependency>
             <groupId>com.potucek.</groupId>
-            <artifactId>adapters</artifactId>
+            <artifactId>application-services</artifactId>
             <version>${project.version}</version>
         </dependency>
 

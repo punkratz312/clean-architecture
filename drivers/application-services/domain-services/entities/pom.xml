@@ -11,7 +11,7 @@
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>enterprise-business-rules</artifactId>
+    <artifactId>entities</artifactId>
 
     <!-- To create an "attached test JAR" to be able to use this module's test classes in other modules -->
     <build>
