@@ -14,7 +14,7 @@ public class HawkResourceCommandImpl implements HawkResourceCommand {
 
     //    @GetMapping
     @Override
-    public Set<Object> findAllHawksSortedByIUCNCategory() {
-        return hawkApplicationService.findAllHawksSortedByIUCNCategory().stream().map(hawk -> new Object()).collect(Collectors.toSet());
+    public Set<Object> findAllHawks() {
+        return hawkApplicationService.findAllHawks().stream().map(hawk -> new Object()).collect(Collectors.toSet());
     }
 }

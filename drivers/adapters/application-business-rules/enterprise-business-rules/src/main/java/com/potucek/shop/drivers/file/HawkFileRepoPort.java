@@ -12,7 +12,7 @@ public class HawkFileRepoPort implements HawkRepoPort {
 
     @SneakyThrows
     @Override
-    public Set<Object> findAllHawksSortedByIUCNCategory() {
+    public Set<Object> findAllHawks() {
         return Files.readAllLines(Path.of("")).stream().map(s -> new Object()).collect(Collectors.toSet());
     }
 }

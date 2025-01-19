@@ -13,7 +13,7 @@ public class HawkRegisterImportDomainServiceImpl implements HawkRegisterImportDo
     private final Set<Hawk> hawks = new HashSet<>();
 
     @Override
-    public Set<Hawk> findAllHawksSortedByIUCNCategory() {
+    public Set<Hawk> findAllHawks() {
         return hawks;
     }
 }

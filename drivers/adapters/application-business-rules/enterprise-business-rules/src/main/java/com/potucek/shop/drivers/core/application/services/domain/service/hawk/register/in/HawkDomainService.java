@@ -4,8 +4,8 @@ import com.potucek.shop.drivers.core.application.services.domain.service.entitie
 
 import java.util.Set;
 
-public interface HawkImportDomainService {
+public interface HawkDomainService {
 
-    Set<Hawk> findAllHawks();
+    Set<Hawk> findAllHawksSortedByIUCNCategory();
 
 }

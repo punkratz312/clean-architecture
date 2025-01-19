@@ -13,6 +13,6 @@ public interface HawkApplicationService {
      * <p>
      * You can find all hawks using the family name "Hawks, eagles"
      */
-    Set<String> findAllHawksSortedByIUCNCategory();
+    Set<String> findAllHawks();
 
 }
