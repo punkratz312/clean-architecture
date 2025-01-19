@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.port.hawk.io.file;
 
-import com.potucek.shop.drivers.core.application.service.hawk.HawkApplicationService;
+import com.potucek.shop.drivers.core.application.services.hawk.HawkApplicationService;
 import com.potucek.shop.drivers.port.hawk.HawkPort;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
