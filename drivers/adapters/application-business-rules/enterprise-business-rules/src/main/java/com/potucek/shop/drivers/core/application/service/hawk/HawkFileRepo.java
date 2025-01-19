@@ -11,7 +11,7 @@ public class HawkFileRepo implements HawkRepo {
 
     @SneakyThrows
     @Override
-    public Set<Object> findAll() {
+    public Set<Object> findAllHawksSortedByIUCNCategory() {
         return Files.readAllLines(Path.of("")).stream().map(s -> new Object()).collect(Collectors.toSet());
     }
 }

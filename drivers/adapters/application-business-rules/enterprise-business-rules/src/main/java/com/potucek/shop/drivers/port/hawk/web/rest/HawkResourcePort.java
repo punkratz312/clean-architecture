@@ -13,7 +13,7 @@ public class HawkResourcePort implements HawkPort {
     }
 
     @Override
-    public Set<String> registerHawks() {
+    public Set<String> findAllHawksSortedByIUCNCategory() {
         return hawkPort.registerHawks();
     }
 

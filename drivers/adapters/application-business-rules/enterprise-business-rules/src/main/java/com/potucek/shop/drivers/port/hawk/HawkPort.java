@@ -4,5 +4,5 @@ import java.util.Set;
 
 public interface HawkPort {
 
-    Set<String> registerHawks();
+    Set<String> findAllHawksSortedByIUCNCategory();
 }

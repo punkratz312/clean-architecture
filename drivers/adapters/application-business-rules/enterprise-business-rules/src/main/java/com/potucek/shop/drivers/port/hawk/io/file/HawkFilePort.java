@@ -24,7 +24,7 @@ public class HawkFilePort implements HawkPort {
 
 
     @Override
-    public Set<String> registerHawks() {
+    public Set<String> findAllHawksSortedByIUCNCategory() {
         throw new UnsupportedOperationException();
     }
 }

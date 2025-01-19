@@ -11,8 +11,8 @@ public class HawkApplicationServiceImpl implements HawkApplicationService {
     private final HawkRepo hawkRepo;
 
     @Override
-    public Set<String> registerHawks() {
-        return hawkRepo.findAll().stream().map(Object::toString).collect(Collectors.toSet());
+    public Set<String> findAllHawksSortedByIUCNCategory() {
+        return hawkRepo.findAllHawksSortedByIUCNCategory().stream().map(Object::toString).collect(Collectors.toSet());
     }
 
     @Override
