@@ -5,6 +5,7 @@ import com.potucek.shop.drivers.core.application.services.hawk.port.command.Hawk
 import lombok.RequiredArgsConstructor;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 public class HawkResourceCommandImpl implements HawkResourceCommand {
@@ -14,6 +15,6 @@ public class HawkResourceCommandImpl implements HawkResourceCommand {
     //    @GetMapping
     @Override
     public Set<Object> findAllHawksSortedByIUCNCategory() {
-        return hawkRegisterImportDomainService.findAllHawksSortedByIUCNCategory();
+        return hawkRegisterImportDomainService.findAllHawksSortedByIUCNCategory().stream().map(hawk -> new Object()).collect(Collectors.toSet());
     }
 }
