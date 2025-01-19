@@ -15,6 +15,6 @@ public interface HawkRegisterDomainService {
      * <p>
      * You can find all hawks using the family name "Hawks, eagles"
      */
-    Set<Hawk> registerHawks();
+    Set<Hawk> findAllHawksSortedByIUCNCategory();
 
 }

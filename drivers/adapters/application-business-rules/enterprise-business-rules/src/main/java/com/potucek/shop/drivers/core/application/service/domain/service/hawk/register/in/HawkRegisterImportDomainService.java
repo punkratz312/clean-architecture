@@ -6,6 +6,6 @@ import java.util.Set;
 
 public interface HawkRegisterImportDomainService {
 
-    Set<Hawk> registerHawks();
+    Set<Hawk> findAllHawksSortedByIUCNCategory();
 
 }

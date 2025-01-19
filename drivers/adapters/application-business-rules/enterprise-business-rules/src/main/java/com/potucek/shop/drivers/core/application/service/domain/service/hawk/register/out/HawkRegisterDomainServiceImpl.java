@@ -12,7 +12,7 @@ public class HawkRegisterDomainServiceImpl implements HawkRegisterDomainService 
     private final HawkRegisterImportDomainService hawkRegisterImportDomainService;
 
     @Override
-    public Set<Hawk> registerHawks() {
+    public Set<Hawk> findAllHawksSortedByIUCNCategory() {
         return hawkRegisterImportDomainService.registerHawks(); // TODO sort
     }
 }
