@@ -11,6 +11,5 @@
         <module>application-services</module>
         <module>application-services/domain-services</module>
         <module>application-services/domain-services/entities</module>
-        <module>application-services/domain-services/entities</module>
     </modules>
 </project>
