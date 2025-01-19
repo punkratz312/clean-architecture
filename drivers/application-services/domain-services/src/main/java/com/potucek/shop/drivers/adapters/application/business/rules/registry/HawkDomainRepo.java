@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.core.application.services.domain.services.hawk.registry;
+package com.potucek.shop.drivers.adapters.application.business.rules.registry;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.Hawk;
 
