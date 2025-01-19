@@ -21,16 +21,13 @@ public class HawkFileRepoPort implements HawkRepoPort {
         return Files.readAllLines(Path.of("birds.csv")).stream()
                 .skip(1)
                 .filter(line -> line.startsWith(HAWKS_EAGLES))
-                .map(line -> {
-                    String[] fields = line.split(";");
-                    return new Bird(fields[1].trim(), fields[2].trim(), IucnCategory.valueOf(fields[3].trim()));
-                })
+                .map(line -> new Bird(IucnCategory.valueOf(line.split(";")[3].trim())))
                 .sorted(Comparator.comparingInt(bird -> bird.iucnCategory().getOrder()))
-                .map(bird -> bird.englishName() + " (" + bird.scientificName() + ") - " + bird.iucnCategory())
+                .map(Record::toString)
                 .collect(Collectors.toSet());
     }
 
-    public record Bird(String englishName, String scientificName, IucnCategory iucnCategory) {
+    public record Bird(IucnCategory iucnCategory) {
     }
 
     @Getter
