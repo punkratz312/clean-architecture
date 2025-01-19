@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.core.port.cloud.aws.s3.hawk;
+package com.potucek.shop.drivers.port.cloud.aws.s3.hawk;
 
 import com.potucek.shop.drivers.core.application.services.hawk.port.HawkRepoPort;
 import lombok.SneakyThrows;
