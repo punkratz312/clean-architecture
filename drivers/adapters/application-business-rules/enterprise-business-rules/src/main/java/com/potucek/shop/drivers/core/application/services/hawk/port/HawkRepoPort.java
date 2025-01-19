@@ -13,5 +13,5 @@ public interface HawkRepoPort {
      * <p>
      * You can find all hawks using the family name "Hawks, eagles"
      */
-    Set<Object> findAllHawksSortedByIUCNCategory();
+    Set<String> findAllHawksSortedByIUCNCategory();
 }
