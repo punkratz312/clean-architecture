@@ -12,11 +12,11 @@ public class HawkResourcePort implements HawkPort {
 
     @Override
     public void registerHawks(Set<String> hawks) {
-
+        throw new IllegalStateException();
     }
 
     @Override
     public void registerHawk(Set<String> hawk) {
-
+        throw new IllegalStateException();
     }
 }
