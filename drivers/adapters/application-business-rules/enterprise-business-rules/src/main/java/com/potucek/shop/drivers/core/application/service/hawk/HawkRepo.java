@@ -1,7 +1,8 @@
 package com.potucek.shop.drivers.core.application.service.hawk;
 
-import java.util.Collection;
+import java.util.Set;
 
 public interface HawkRepo {
-    Collection<Object> findAll();
+
+    Set<Object> findAll();
 }
