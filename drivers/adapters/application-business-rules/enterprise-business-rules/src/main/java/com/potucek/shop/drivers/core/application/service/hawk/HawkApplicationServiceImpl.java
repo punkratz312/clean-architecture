@@ -1,7 +1,5 @@
 package com.potucek.shop.drivers.core.application.service.hawk;
 
-import com.potucek.shop.drivers.core.application.service.domian.service.entities.Hawk.Hawk;
-import com.potucek.shop.drivers.core.application.service.domian.service.hawk.register.out.HawkRegisterDomainService;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Set;
@@ -10,11 +8,11 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class HawkApplicationServiceImpl implements HawkApplicationService {
 
-    private final HawkRegisterDomainService hawkRegisterDomainService;
+    private final HawkRepo hawkRepo;
 
     @Override
     public Set<String> registerHawks() {
-        return hawkRegisterDomainService.registerHawks().stream().map(Hawk::toString).collect(Collectors.toSet());
+        return hawkRepo.findAll().stream().map(Object::toString).collect(Collectors.toSet());
     }
 
     @Override

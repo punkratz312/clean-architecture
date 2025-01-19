@@ -17,13 +17,4 @@ public class HawkResourcePort implements HawkPort {
         return hawkPort.registerHawks();
     }
 
-    @Override
-    public void registerHawks(Set<String> hawks) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void registerHawk(Set<String> hawk) {
-        throw new UnsupportedOperationException();
-    }
 }

@@ -19,22 +19,12 @@ public class HawkFilePort implements HawkPort {
 //    @PostContruct
     public void init() {
         List<String> file = Files.readAllLines(Path.of(""));
-        registerHawks(Set.copyOf(file));
+//        registerHawks(Set.copyOf(file));
     }
 
 
     @Override
     public Set<String> registerHawks() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void registerHawks(Set<String> hawks) {
-
-    }
-
-    @Override
-    public void registerHawk(Set<String> hawk) {
         throw new UnsupportedOperationException();
     }
 }
