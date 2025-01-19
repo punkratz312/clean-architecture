@@ -41,6 +41,7 @@ public class HawkFileRepoPort implements HawkRepoPort {
         EW(6),
         EX(7),
         DD(8);
+
         private final int order;
     }
 }
