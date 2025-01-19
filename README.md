@@ -1,5 +1,9 @@
 # Clean Architecture in Java Tutorial
 
+todo:
+
+e2e test for hawks
+
 # BIRDS
 
 Birdlife International regularly publishes the Red List of endangered birds. An example of this list is in the resources folder (a csv file
