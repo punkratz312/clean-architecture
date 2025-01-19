@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.core.application.service.domian.service.hawk.register.out;
+package com.potucek.shop.drivers.core.application.service.domian.service.hawk.register;
 
 import com.potucek.shop.drivers.core.application.service.domian.service.entities.Hawk.Hawk;
 
@@ -57,5 +57,9 @@ public interface HawkRegisterDomainService {
      * You can find all hawks using the family name "Hawks, eagles"
      */
     Set<Hawk> registerHawks();
+
+    void registerHawks(Set<Hawk> hawks);
+
+    void registerHawk(Hawk hawk);
 
 }
