@@ -18,7 +18,8 @@ public class HawkFileRepoPort implements HawkRepoPort {
     @SneakyThrows
     @Override
     public Set<String> findAllHawksSortedByIUCNCategory() {
-        return Files.readAllLines(Path.of("birds.csv")).stream()
+        return Files
+                .readAllLines(Path.of("birds.csv")).stream()
                 .skip(1)
                 .filter(line -> line.startsWith(HAWKS_EAGLES))
                 .map(line -> new Bird(IucnCategory.valueOf(line.split(";")[3].trim())))
