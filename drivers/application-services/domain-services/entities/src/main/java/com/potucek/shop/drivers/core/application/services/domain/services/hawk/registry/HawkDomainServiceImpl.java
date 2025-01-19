@@ -1,6 +1,6 @@
-package com.potucek.shop.drivers.core.application.services.domain.service.hawk.registry;
+package com.potucek.shop.drivers.core.application.services.domain.services.hawk.registry;
 
-import com.potucek.shop.drivers.core.application.services.domain.service.entities.hawk.Hawk;
+import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.Hawk;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Set;

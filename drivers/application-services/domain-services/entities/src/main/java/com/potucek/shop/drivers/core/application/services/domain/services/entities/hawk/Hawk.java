@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.core.application.services.domain.service.entities.hawk;
+package com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk;
 
 public record Hawk(
         String birdFamily,
