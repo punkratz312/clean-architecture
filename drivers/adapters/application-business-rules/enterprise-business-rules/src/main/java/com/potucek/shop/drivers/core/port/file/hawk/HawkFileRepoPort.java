@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.core.port.file.hawk;
 
-import com.potucek.shop.drivers.core.application.services.hawk.HawkRepoPort;
+import com.potucek.shop.drivers.core.application.services.hawk.port.HawkRepoPort;
 import lombok.SneakyThrows;
 
 import java.nio.file.Files;

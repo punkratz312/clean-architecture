@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.core.port.cloud.aws.s3.hawk;
 
-import com.potucek.shop.drivers.core.application.services.hawk.HawkRepoPort;
+import com.potucek.shop.drivers.core.application.services.hawk.port.HawkRepoPort;
 import lombok.SneakyThrows;
 
 import java.util.Collections;
