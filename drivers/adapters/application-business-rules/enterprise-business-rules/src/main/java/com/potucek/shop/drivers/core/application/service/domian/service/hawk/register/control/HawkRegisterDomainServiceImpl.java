@@ -1,6 +1,7 @@
-package com.potucek.shop.drivers.core.application.service.domian.service.hawk.register;
+package com.potucek.shop.drivers.core.application.service.domian.service.hawk.register.control;
 
 import com.potucek.shop.drivers.core.application.service.domian.service.entities.Hawk.Hawk;
+import com.potucek.shop.drivers.core.application.service.domian.service.hawk.register.HawkRegisterDomainService;
 
 import java.util.HashSet;
 import java.util.Set;
