@@ -17,7 +17,6 @@ public class HawkDomainRepoImpl implements HawkDomainRepo {
 
     @Override
     public Set<Hawk> findAll() {
-        return hawkRepository.findAllHawksSortedByIUCNCategory().stream().map(o -> new Hawk(null, null, null, null)).collect(Collectors.toSet());
-
+        return hawkRepository.findAllHawksSortedByIUCNCategory().stream().map(o -> new Hawk(o, null, null, null)).collect(Collectors.toSet());
     }
 }

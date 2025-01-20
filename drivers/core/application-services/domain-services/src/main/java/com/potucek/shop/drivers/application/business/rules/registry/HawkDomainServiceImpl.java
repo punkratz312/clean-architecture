@@ -4,8 +4,8 @@ import com.potucek.shop.drivers.core.application.services.domain.services.entiti
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Component
@@ -15,6 +15,6 @@ public class HawkDomainServiceImpl implements HawkDomainService {
 
     @Override
     public Set<Hawk> findAll() {
-        return hawkDomainRepo.findAll().stream().map(o -> new Hawk(null, null, null, null)).collect(Collectors.toSet());
+        return new HashSet<>(hawkDomainRepo.findAll());
     }
 }
