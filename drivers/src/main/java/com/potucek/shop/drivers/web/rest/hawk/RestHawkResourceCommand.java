@@ -24,8 +24,4 @@ public class RestHawkResourceCommand implements HawkResourceCommand {
         return hawkApplicationService.findAllHawks();
     }
 
-    //    @GetMapping
-    public String findAllHawks2() {
-        return "Greetings from Spring Boot!";
-    }
 }
