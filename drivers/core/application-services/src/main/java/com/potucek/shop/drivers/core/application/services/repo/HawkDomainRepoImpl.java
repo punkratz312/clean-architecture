@@ -4,16 +4,17 @@ import com.potucek.shop.drivers.application.business.rules.registry.HawkDomainRe
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @RequiredArgsConstructor
 @Component
-public class HawkApplicationRepoImpl implements HawkApplicationRepo {
+public class HawkDomainRepoImpl implements HawkDomainRepo { // implementing the inner world
 
-    private final HawkDomainRepo hawkDomainRepo;
+    private final HawkApplicationRepoPort hawkRepository;  // using the outer world through port
 
     @Override
     public Set<String> findAllHawksSortedByIUCNCategory() {
-        return hawkDomainRepo.findAllHawksSortedByIUCNCategory();
+        return new HashSet<>(hawkRepository.findAllHawksSortedByIUCNCategory());
     }
 }
