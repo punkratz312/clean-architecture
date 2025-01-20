@@ -7,7 +7,7 @@ import lombok.SneakyThrows;
 import org.springframework.stereotype.Component;
 
 import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -22,7 +22,7 @@ public class HawkFileRepository implements HawkApplicationRepoPort {
     public Set<String> findAllHawksSortedByIUCNCategory() {
 //        return Set.of("Greetings from Spring Boot!");
         Set<String> collect = Files
-                .readAllLines(Path.of("birds.csv")).stream()
+                .readAllLines(Paths.get(getClass().getClassLoader().getResource("birds.csv").toURI())).stream()
                 .skip(1)
                 .filter(line -> line.startsWith(HAWKS_EAGLES))
                 .map(line -> new Bird(IucnCategory.valueOf(line.split(";")[3].trim())))
