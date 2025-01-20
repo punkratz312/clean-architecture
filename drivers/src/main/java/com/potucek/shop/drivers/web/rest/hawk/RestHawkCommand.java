@@ -1,7 +1,6 @@
 package com.potucek.shop.drivers.web.rest.hawk;
 
 import com.potucek.shop.drivers.core.application.services.port.command.HawkCommandPort;
-import com.potucek.shop.drivers.core.application.services.port.repo.HawkApplicationRepoPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,12 +15,12 @@ import java.util.Set;
 @RequestMapping("hawks")
 public class RestHawkCommand implements HawkCommandPort {
 
-    private final HawkApplicationRepoPort hawkCommandPort;
+    private final HawkCommandPort hawkCommandPort;
 
     @Override
     @GetMapping
     public Set<String> findAllHawks() {
-        return hawkCommandPort.findAllHawksSortedByIUCNCategory();
+        return hawkCommandPort.findAllHawks();
     }
 
 }
