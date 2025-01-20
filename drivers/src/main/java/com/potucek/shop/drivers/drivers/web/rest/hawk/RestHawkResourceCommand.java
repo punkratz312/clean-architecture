@@ -1,7 +1,6 @@
 package com.potucek.shop.drivers.drivers.web.rest.hawk;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.command.HawkResourceCommand;
-import jakarta.ws.rs.GET;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,16 +18,13 @@ public class RestHawkResourceCommand implements HawkResourceCommand {
 
 //    private final HawkApplicationService hawkApplicationService;
 
-    //    @GET
     @Override
     public Set<String> findAllHawks() {
 //        return hawkApplicationService.findAllHawks();
         return Collections.emptySet();
     }
 
-    @GET
     @GetMapping
-//    @GetMapping("hawks")
     public String findAllHawks2() {
         return "Greetings from Spring Boot!";
     }
