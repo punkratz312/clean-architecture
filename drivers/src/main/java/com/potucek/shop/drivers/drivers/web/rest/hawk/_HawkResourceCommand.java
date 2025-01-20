@@ -5,10 +5,12 @@ import com.potucek.shop.drivers.core.application.services.hawk.HawkApplicationSe
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Set;
 
 @RequiredArgsConstructor
+@RestController
 @Path("hawks")
 public class _HawkResourceCommand implements HawkResourceCommand {
 
