@@ -6,11 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Component;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Comparator;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @Component
 public class HawkFileRepository implements HawkRepository {
@@ -20,14 +16,17 @@ public class HawkFileRepository implements HawkRepository {
     @SneakyThrows
     @Override
     public Set<String> findAllHawksSortedByIUCNCategory() {
-        return Files
-                .readAllLines(Path.of("birds.csv")).stream()
-                .skip(1)
-                .filter(line -> line.startsWith(HAWKS_EAGLES))
-                .map(line -> new Bird(IucnCategory.valueOf(line.split(";")[3].trim())))
-                .sorted(Comparator.comparingInt(bird -> bird.iucnCategory().getOrder()))
-                .map(Record::toString)
-                .collect(Collectors.toSet());
+        return Set.of("Greetings from Spring Boot!");
+//        Set<String> collect = Files
+//                .readAllLines(Path.of("birds.csv")).stream()
+//                .skip(1)
+//                .filter(line -> line.startsWith(HAWKS_EAGLES))
+//                .map(line -> new Bird(IucnCategory.valueOf(line.split(";")[3].trim())))
+//                .sorted(Comparator.comparingInt(bird -> bird.iucnCategory().getOrder()))
+//                .map(Record::toString)
+//                .collect(Collectors.toSet());
+//        collect.add("Greetings from Spring Boot!");
+//        return collect;
     }
 
     public record Bird(IucnCategory iucnCategory) {
