@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.drivers;
+package com.potucek.shop.drivers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.AutoConfiguration;

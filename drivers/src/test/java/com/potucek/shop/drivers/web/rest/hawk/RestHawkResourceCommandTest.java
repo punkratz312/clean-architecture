@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.drivers.web.rest.hawk;
+package com.potucek.shop.drivers.web.rest.hawk;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

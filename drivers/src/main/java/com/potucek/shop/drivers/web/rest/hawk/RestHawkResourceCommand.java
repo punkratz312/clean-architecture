@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.drivers.web.rest.hawk;
+package com.potucek.shop.drivers.web.rest.hawk;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.command.HawkResourceCommand;
 import com.potucek.shop.drivers.core.application.services.hawk.HawkApplicationService;
