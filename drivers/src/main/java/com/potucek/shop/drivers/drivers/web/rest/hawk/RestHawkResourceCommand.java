@@ -14,7 +14,7 @@ import java.util.Set;
 @Component
 @RestController
 @RequestMapping("hawks")
-class RestHawkResourceCommand implements HawkResourceCommand {
+public class RestHawkResourceCommand implements HawkResourceCommand {
 
     private final HawkApplicationService hawkApplicationService;
 
