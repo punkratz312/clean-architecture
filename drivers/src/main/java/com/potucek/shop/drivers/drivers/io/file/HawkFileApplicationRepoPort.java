@@ -33,12 +33,12 @@ class HawkFileApplicationRepoPort implements HawkApplicationRepoPort {
         return collect;
     }
 
-    public record Bird(IucnCategory iucnCategory) {
+    record Bird(IucnCategory iucnCategory) {
     }
 
     @Getter
     @RequiredArgsConstructor
-    public enum IucnCategory {
+    enum IucnCategory {
         LC(1),
         NT(2),
         VU(3),

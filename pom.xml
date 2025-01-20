@@ -182,7 +182,7 @@
                         <outputDirectory>${project.basedir}</outputDirectory>
                         <outputDirectory>${project.basedir}</outputDirectory>
                         <additionalPlantUmlConfigs>
-                            <!--                            <additionalPlantUmlConfig>left to right direction</additionalPlantUmlConfig>-->
+                            <additionalPlantUmlConfig>left to right direction</additionalPlantUmlConfig>
                             <additionalPlantUmlConfig>skinparam linetype ortho</additionalPlantUmlConfig>
                         </additionalPlantUmlConfigs>
                         <scanPackages>
