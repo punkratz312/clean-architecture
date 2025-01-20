@@ -11,14 +11,11 @@
     </parent>
     <artifactId>drivers</artifactId>
     <dependencies>
-        <!-- Internal -->
         <dependency>
             <groupId>com.potucek.</groupId>
             <artifactId>application-services</artifactId>
             <version>${project.version}</version>
         </dependency>
-
-        <!-- External -->
         <dependency>
             <groupId>jakarta.persistence</groupId>
             <artifactId>jakarta.persistence-api</artifactId>
@@ -27,8 +24,6 @@
             <groupId>jakarta.ws.rs</groupId>
             <artifactId>jakarta.ws.rs-api</artifactId>
         </dependency>
-
-        <!-- Test scope -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
