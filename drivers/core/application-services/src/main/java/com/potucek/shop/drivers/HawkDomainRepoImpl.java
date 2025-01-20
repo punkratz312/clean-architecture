@@ -5,12 +5,14 @@ import com.potucek.shop.drivers.core.application.services.domain.services.entiti
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.repo.HawkRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.ApplicationScope;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Component
+@ApplicationScope
 public class HawkDomainRepoImpl implements HawkDomainRepo {
 
     private final HawkRepository hawkRepository;

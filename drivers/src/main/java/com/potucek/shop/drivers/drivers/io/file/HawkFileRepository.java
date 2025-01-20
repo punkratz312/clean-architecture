@@ -5,10 +5,12 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.ApplicationScope;
 
 import java.util.Set;
 
 @Component
+@ApplicationScope
 public class HawkFileRepository implements HawkRepository {
 
     public static final String HAWKS_EAGLES = "Hawks, eagles";

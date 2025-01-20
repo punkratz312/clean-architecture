@@ -3,12 +3,14 @@ package com.potucek.shop.drivers.core.application.services.hawk;
 import com.potucek.shop.drivers.application.business.rules.registry.HawkDomainService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.ApplicationScope;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Component
+@ApplicationScope
 public class HawkApplicationServiceImpl implements HawkApplicationService {
 
     private final HawkDomainService hawkDomainService;
