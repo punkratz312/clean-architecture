@@ -1,5 +1,6 @@
-package com.potucek.shop.drivers.application.business.rules.registry;
+package com.potucek.shop.drivers.core.application.services.domain.services.hawk;
 
+import com.potucek.shop.drivers.core.application.services.domain.services.hawk.port.repo.HawkDomainRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
