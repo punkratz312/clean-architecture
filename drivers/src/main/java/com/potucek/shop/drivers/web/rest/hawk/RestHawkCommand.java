@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.web.rest.hawk;
 
-import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.command.HawkResourceCommand;
+import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.command.HawkCommand;
 import com.potucek.shop.drivers.core.application.services.hawk.HawkApplicationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -14,7 +14,7 @@ import java.util.Set;
 @Component
 @RestController
 @RequestMapping("hawks")
-public class RestHawkResourceCommand implements HawkResourceCommand {
+public class RestHawkCommand implements HawkCommand {
 
     private final HawkApplicationService hawkApplicationService;
 

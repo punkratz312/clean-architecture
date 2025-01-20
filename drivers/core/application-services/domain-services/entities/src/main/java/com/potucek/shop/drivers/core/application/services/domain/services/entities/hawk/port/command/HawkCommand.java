@@ -2,7 +2,7 @@ package com.potucek.shop.drivers.core.application.services.domain.services.entit
 
 import java.util.Set;
 
-public interface HawkResourceCommand {
+public interface HawkCommand {
 
     Set<String> findAllHawks();
 }

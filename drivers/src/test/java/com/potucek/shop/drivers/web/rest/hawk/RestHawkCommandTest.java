@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class RestHawkResourceCommandTest {
+class RestHawkCommandTest {
 
     public static final String PATH = "/hawks";
 
