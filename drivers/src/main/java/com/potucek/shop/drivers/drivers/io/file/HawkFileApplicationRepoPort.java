@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Component
-class HawkFileRepository implements HawkApplicationRepoPort {
+class HawkFileApplicationRepoPort implements HawkApplicationRepoPort {
 
     static final String HAWKS_EAGLES = "Hawks, eagles";
     static final String BIRDS_CSV = "birds.csv";
@@ -21,7 +21,6 @@ class HawkFileRepository implements HawkApplicationRepoPort {
     @SneakyThrows
     @Override
     public Set<String> findAllHawksSortedByIUCNCategory() {
-//        return Set.of("Greetings from Spring Boot!");
         Set<String> collect = Files
                 .readAllLines(Paths.get(getClass().getClassLoader().getResource(BIRDS_CSV).toURI())).stream()
                 .skip(1)
