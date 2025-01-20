@@ -4,6 +4,7 @@ import com.potucek.shop.drivers.core.application.services.domain.services.entiti
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import org.springframework.stereotype.Component;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -11,6 +12,7 @@ import java.util.Comparator;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Component
 public class HawkFileRepository implements HawkRepository {
 
     public static final String HAWKS_EAGLES = "Hawks, eagles";

@@ -2,11 +2,13 @@ package com.potucek.shop.drivers.application.business.rules.registry;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.Hawk;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
+@Component
 public class HawkDomainServiceImpl implements HawkDomainService {
 
     private final HawkDomainRepo hawkDomainRepo;

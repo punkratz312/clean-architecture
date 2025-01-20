@@ -5,20 +5,27 @@ import com.potucek.shop.drivers.core.application.services.hawk.HawkApplicationSe
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Set;
 
 @RequiredArgsConstructor
+@Component
 @RestController
 @Path("hawks")
 public class RestHawkResourceCommand implements HawkResourceCommand {
 
     private final HawkApplicationService hawkApplicationService;
 
-    @GET
+    //    @GET
     @Override
     public Set<String> findAllHawks() {
         return hawkApplicationService.findAllHawks();
+    }
+
+    @GET
+    public String findAllHawks2() {
+        return "Greetings from Spring Boot!";
     }
 }
