@@ -7,13 +7,11 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.context.annotation.ApplicationScope;
 
 import java.util.Set;
 
 @RequiredArgsConstructor
 @Component
-@ApplicationScope
 @RestController
 @RequestMapping("hawks")
 public class RestHawkResourceCommand implements HawkResourceCommand {
@@ -24,7 +22,6 @@ public class RestHawkResourceCommand implements HawkResourceCommand {
     @GetMapping
     public Set<String> findAllHawks() {
         return hawkApplicationService.findAllHawks();
-//        return Collections.emptySet();
     }
 
     //    @GetMapping
