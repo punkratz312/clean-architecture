@@ -10,7 +10,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor
 @Path("hawks")
-public class HawkResourceCommandImpl implements HawkResourceCommand {
+public class _HawkResourceCommand implements HawkResourceCommand {
 
     private final HawkApplicationService hawkApplicationService;
 
