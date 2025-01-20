@@ -4,5 +4,8 @@ import java.util.Set;
 
 public interface HawkCommand {
 
+    /**
+     * considered unused as implemented from port impl and then discovered
+     */
     Set<String> findAllHawks();
 }
