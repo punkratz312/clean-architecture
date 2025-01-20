@@ -13,7 +13,7 @@ public class HawkDomainServiceImpl implements HawkDomainService {
     private final HawkDomainRepo hawkDomainRepo;
 
     @Override
-    public Set<String> findAllHawksSortedByIUCNCategory() {
+    public Set<String> findAllHawks() {
         return hawkDomainRepo.findAllHawksSortedByIUCNCategory();
     }
 }

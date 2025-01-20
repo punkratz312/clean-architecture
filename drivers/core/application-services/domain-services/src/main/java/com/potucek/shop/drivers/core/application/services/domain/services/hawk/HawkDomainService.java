@@ -4,6 +4,6 @@ import java.util.Set;
 
 public interface HawkDomainService {
 
-    Set<String> findAllHawksSortedByIUCNCategory();
+    Set<String> findAllHawks();
 
 }
