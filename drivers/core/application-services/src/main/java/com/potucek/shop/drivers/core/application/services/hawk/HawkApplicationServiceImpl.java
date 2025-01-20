@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Component
-public class HawkApplicationServiceImpl implements HawkApplicationService {
+class HawkApplicationServiceImpl implements HawkApplicationService {
 
     private final HawkDomainService hawkDomainService;
 

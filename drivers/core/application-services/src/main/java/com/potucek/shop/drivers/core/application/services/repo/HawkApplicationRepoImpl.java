@@ -8,7 +8,7 @@
 //
 //@RequiredArgsConstructor
 //@Component
-//public class HawkApplicationRepoImpl implements HawkApplicationRepoPort {
+// class HawkApplicationRepoImpl implements HawkApplicationRepoPort {
 //
 //    private final HawkDomainRepo hawkDomainRepo;
 //

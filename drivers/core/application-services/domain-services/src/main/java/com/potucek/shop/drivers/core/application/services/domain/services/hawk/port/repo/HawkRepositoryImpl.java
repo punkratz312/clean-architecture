@@ -4,7 +4,7 @@ import com.potucek.shop.drivers.core.application.services.domain.services.entiti
 
 import java.util.Set;
 
-public class HawkRepositoryImpl implements HawkRepository {
+class HawkRepositoryImpl implements HawkRepository {
 
 //    private final HawkApplicationRepo s;
 

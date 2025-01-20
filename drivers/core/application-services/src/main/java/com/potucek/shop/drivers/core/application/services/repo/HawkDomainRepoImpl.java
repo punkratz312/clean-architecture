@@ -9,7 +9,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor
 @Component
-public class HawkDomainRepoImpl implements HawkDomainRepo { // implementing the inner world
+class HawkDomainRepoImpl implements HawkDomainRepo { // implementing the inner world
 
     private final HawkApplicationRepoPort hawkRepository;  // using the outer world through port
 

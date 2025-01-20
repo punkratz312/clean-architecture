@@ -8,7 +8,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor
 @Component
-public class HawkDomainServiceImpl implements HawkDomainService {
+class HawkDomainServiceImpl implements HawkDomainService {
 
     private final HawkDomainRepo hawkDomainRepo;
 
