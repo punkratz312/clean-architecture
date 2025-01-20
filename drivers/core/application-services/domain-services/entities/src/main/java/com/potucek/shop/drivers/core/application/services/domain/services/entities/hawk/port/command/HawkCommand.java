@@ -9,5 +9,5 @@ public interface HawkCommand {
     /**
      * considered unused as implemented from port impl and then discovered
      */
-    Set<Hawk> findAllHawks();
+    Set<Hawk> findAllHawks(); // call from rest
 }
