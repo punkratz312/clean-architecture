@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.core.application.services.repo;
+package com.potucek.shop.drivers.core.application.services.port.repo;
 
 import java.util.Set;
 

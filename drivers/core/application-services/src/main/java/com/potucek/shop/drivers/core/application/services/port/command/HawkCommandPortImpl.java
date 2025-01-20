@@ -1,4 +1,4 @@
-package com.potucek.shop.drivers.core.application.services.hawk;
+package com.potucek.shop.drivers.core.application.services.port.command;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.hawk.HawkDomainService;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Component
-public class HawkApplicationServiceImpl implements HawkApplicationService {
+public class HawkCommandPortImpl implements HawkCommandPort {
 
     private final HawkDomainService hawkDomainService;
 
