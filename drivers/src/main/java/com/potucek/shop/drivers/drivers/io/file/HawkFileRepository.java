@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.drivers.io.file;
 
-import com.potucek.shop.drivers.core.application.services.repo.HawkApplicationRepo;
+import com.potucek.shop.drivers.core.application.services.repo.HawkApplicationRepoPort;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Component
-public class HawkFileRepository implements HawkApplicationRepo {
+public class HawkFileRepository implements HawkApplicationRepoPort {
 
     public static final String HAWKS_EAGLES = "Hawks, eagles";
 
