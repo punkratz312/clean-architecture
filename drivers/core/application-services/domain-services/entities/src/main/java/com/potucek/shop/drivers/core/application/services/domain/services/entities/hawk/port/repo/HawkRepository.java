@@ -1,5 +1,7 @@
 package com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.repo;
 
+import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.Hawk;
+
 import java.util.Set;
 
 public interface HawkRepository {
@@ -13,5 +15,5 @@ public interface HawkRepository {
      * <p>
      * You can find all hawks using the family name "Hawks, eagles"
      */
-    Set<String> findAllHawksSortedByIUCNCategory();
+    Set<Hawk> findAllHawksSortedByIUCNCategory();
 }
