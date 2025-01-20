@@ -3,7 +3,6 @@ package com.potucek.shop.drivers.application.business.rules.registry;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @RequiredArgsConstructor
@@ -14,6 +13,6 @@ class HawkDomainServiceImpl implements HawkDomainService {
 
     @Override
     public Set<String> findAll() {
-        return new HashSet<>(hawkDomainRepo.findAllHawksSortedByIUCNCategory());
+        return hawkDomainRepo.findAllHawksSortedByIUCNCategory();
     }
 }

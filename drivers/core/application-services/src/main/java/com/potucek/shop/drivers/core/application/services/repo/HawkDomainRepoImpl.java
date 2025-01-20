@@ -4,7 +4,6 @@ import com.potucek.shop.drivers.application.business.rules.registry.HawkDomainRe
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @RequiredArgsConstructor
@@ -15,6 +14,6 @@ class HawkDomainRepoImpl implements HawkDomainRepo { // implementing the inner w
 
     @Override
     public Set<String> findAllHawksSortedByIUCNCategory() {
-        return new HashSet<>(hawkRepository.findAllHawksSortedByIUCNCategory());
+        return hawkRepository.findAllHawksSortedByIUCNCategory();
     }
 }
