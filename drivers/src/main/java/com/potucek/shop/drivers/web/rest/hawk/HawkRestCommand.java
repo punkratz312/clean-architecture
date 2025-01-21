@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.web.rest.hawk;
 
-import com.potucek.shop.drivers.core.HawkCommand;
+import com.potucek.shop.drivers.core.application.services.port.command.HawkApplicationCommand;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +13,9 @@ import java.util.Set;
 @Component
 @RestController
 @RequestMapping("hawks")
-public class HawkRestController {
+public class HawkRestCommand {
 
-    private final HawkCommand hawkCommand;
+    private final HawkApplicationCommand hawkCommand;
 
     @GetMapping
     public Set<String> findAllHawks() {

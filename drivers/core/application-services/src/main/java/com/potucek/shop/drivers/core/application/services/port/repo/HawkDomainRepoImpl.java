@@ -1,7 +1,6 @@
-package com.potucek.shop.drivers.core.application.services.repo;
+package com.potucek.shop.drivers.core.application.services.port.repo;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.hawk.port.repo.HawkDomainRepo;
-import com.potucek.shop.drivers.core.application.services.port.repo.HawkApplicationRepoPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,6 @@
 package com.potucek.shop.drivers.core.application.services.port.command;
 
-import com.potucek.shop.drivers.core.HawkCommand;
-import com.potucek.shop.drivers.core.application.services.domain.services.hawk.HawkDomainService;
+import com.potucek.shop.drivers.core.application.services.domain.services.hawk.HawkDomainCommand;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -9,11 +8,10 @@ import java.util.Set;
 
 @RequiredArgsConstructor
 @Component
-public class HawkCommandImpl implements HawkCommand {
+public class HawkCommandImpl {
 
-    private final HawkDomainService hawkDomainService;
+    private final HawkDomainCommand hawkDomainService;
 
-    @Override
     public Set<String> findAllHawks() {
         return hawkDomainService.findAllHawks();
     }
