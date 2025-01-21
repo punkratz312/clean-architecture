@@ -7,13 +7,14 @@ import java.util.Set;
 public interface HawkRepository {
 
     /**
-     * Find all hawks (eagles, buzzards, vultures, kites, etc), sort them according to their IUCN Category and print them (System.out
-     * .println). For each species you should print at least the English name, the scientific name and the IUCN category.
+     * Retrieve all hawks (eagles, buzzards, vultures, kites, etc.) and sort them according to their IUCN category.
      * <p>
-     * Sorting should be according to the list above with birds in the "LC" category printed first and birds in the "DD" category printed
+     * Sorting should prioritize birds in the "LC" (Least Concern) category first and place birds in the "DD" (Data Deficient) category
      * last.
-     * <p>
-     * You can find all hawks using the family name "Hawks, eagles"
+     * The method provides a structured way to access and organize data on hawks using the family name "Hawks, eagles."
+     * </p>
+     *
+     * @return a set of hawks sorted by their IUCN category.
      */
     Set<Hawk> findAllHawksSortedByIUCNCategory();
 }
