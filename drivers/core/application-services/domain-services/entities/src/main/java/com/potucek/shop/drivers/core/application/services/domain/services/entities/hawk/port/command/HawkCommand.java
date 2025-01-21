@@ -6,7 +6,7 @@ import com.potucek.shop.drivers.core.application.services.domain.services.entiti
 import java.util.Set;
 
 /**
- * using {@link HawkRepository}
+ * use {@link HawkRepository}
  */
 public interface HawkCommand {
 
