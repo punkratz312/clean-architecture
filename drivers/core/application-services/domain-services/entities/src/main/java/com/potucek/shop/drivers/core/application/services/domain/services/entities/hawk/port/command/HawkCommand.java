@@ -1,13 +1,17 @@
 package com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.command;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.Hawk;
+import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.repo.HawkRepository;
 
 import java.util.Set;
 
+/**
+ * using {@link HawkRepository}
+ */
 public interface HawkCommand {
 
     /**
-     * considered unused as implemented from port impl and then discovered
+     * return {@link HawkRepository#findAllHawksSortedByIUCNCategory()}
      */
-    Set<Hawk> findAllHawks(); // call from rest
+    Set<Hawk> findAllHawks();
 }
