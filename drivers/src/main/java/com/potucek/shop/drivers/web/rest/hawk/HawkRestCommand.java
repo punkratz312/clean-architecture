@@ -15,7 +15,7 @@ import java.util.Set;
 @RequestMapping("hawks")
 public class HawkRestCommand {
 
-    private final HawkApplicationCommand hawkCommand;
+    private final HawkApplicationCommand hawkCommand; // using the inner world aka. use-case
 
     @GetMapping
     public Set<String> findAllHawks() {
