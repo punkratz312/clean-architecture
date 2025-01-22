@@ -5,7 +5,6 @@ import com.potucek.shop.drivers.core.application.services.domain.services.entiti
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.Collections;
 import java.util.Set;
 
 @RequiredArgsConstructor
@@ -16,7 +15,7 @@ class HawkCommandImpl implements HawkCommand {
 
     @Override
     public Set<Hawk> findAllHawks() {
-//        return hawkRepository.findAllHawksSortedByIUCNCategory();
-        return Collections.emptySet();
+        return hawkRepository.findAllHawksSortedByIUCNCategory();
+//        return Collections.emptySet();
     }
 }

@@ -1,6 +1,6 @@
 package com.potucek.shop.drivers.web.rest.hawk;
 
-import com.potucek.shop.drivers.core.application.services.port.command.HawkApplicationCommand;
+import com.potucek.shop.drivers.core.application.services.port.command.HawkApplicationCommandTrigger;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +15,7 @@ import java.util.Set;
 @RequestMapping("hawks")
 class HawkRestCommandTrigger {
 
-    private final HawkApplicationCommand hawkCommand; // using the inner world aka. use-case
+    private final HawkApplicationCommandTrigger hawkCommand; // using the inner world aka. use-case
 
     @GetMapping
     public Set<String> findAllHawks() {
