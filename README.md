@@ -5,3 +5,5 @@ https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onio
 ![dd-hexagon.png](dd-hexagon.png)
 
 ![entity-relationship.svg](drivers/entity-relationship.svg)
+
+TODO: test coverage + arch unit test
