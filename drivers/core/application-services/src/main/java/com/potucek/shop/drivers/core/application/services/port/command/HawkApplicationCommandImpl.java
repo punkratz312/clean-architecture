@@ -8,7 +8,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor
 @Component
-public class HawkApplicationCommandImpl implements HawkApplicationCommand {
+class HawkApplicationCommandImpl implements HawkApplicationCommand {
 
     private final HawkDomainCommand hawkDomainCommand; // using the inner world aka. use-case
 

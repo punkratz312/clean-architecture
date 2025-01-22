@@ -13,7 +13,7 @@ import java.util.Set;
 @Component
 @RestController
 @RequestMapping("hawks")
-public class HawkRestCommand {
+class HawkRestCommandTrigger {
 
     private final HawkApplicationCommand hawkCommand; // using the inner world aka. use-case
 

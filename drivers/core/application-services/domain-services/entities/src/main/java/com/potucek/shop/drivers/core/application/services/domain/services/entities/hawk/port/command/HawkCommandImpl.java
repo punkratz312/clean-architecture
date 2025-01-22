@@ -5,16 +5,18 @@ import com.potucek.shop.drivers.core.application.services.domain.services.entiti
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.Collections;
 import java.util.Set;
 
 @RequiredArgsConstructor
 @Component
-public class HawkCommandImpl implements HawkCommand {
+class HawkCommandImpl implements HawkCommand {
 
     private final HawkRepository hawkRepository;
 
     @Override
     public Set<Hawk> findAllHawks() {
-        return hawkRepository.findAllHawksSortedByIUCNCategory();
+//        return hawkRepository.findAllHawksSortedByIUCNCategory();
+        return Collections.emptySet();
     }
 }

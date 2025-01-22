@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Component
-public class HawkFileApplicationRepoPort implements HawkApplicationRepoPort {
+class HawkFileApplicationRepoPort implements HawkApplicationRepoPort {
 
     static final String HAWKS_EAGLES = "Hawks, eagles";
     static final String BIRDS_CSV = "birds.csv";

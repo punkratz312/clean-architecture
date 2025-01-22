@@ -8,7 +8,7 @@
 //
 //@RequiredArgsConstructor
 //@Component
-//public class HawkCommandImpl {
+//class HawkCommandImpl {
 //
 //    private final HawkDomainCommand hawkDomainService;
 //

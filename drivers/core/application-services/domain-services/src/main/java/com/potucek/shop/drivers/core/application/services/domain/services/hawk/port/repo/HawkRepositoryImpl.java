@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Component
-public class HawkRepositoryImpl implements HawkRepository {
+class HawkRepositoryImpl implements HawkRepository {
 
     private final HawkDomainRepo hawkDomainRepo;
 

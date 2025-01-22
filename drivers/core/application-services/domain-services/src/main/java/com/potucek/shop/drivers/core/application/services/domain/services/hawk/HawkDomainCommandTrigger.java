@@ -5,7 +5,7 @@ import java.util.Set;
 /**
  * trigger for {@link com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.command.HawkCommand}
  */
-public interface HawkDomainCommand {
+public interface HawkDomainCommandTrigger {
 
     Set<String> findAllHawks();
 
