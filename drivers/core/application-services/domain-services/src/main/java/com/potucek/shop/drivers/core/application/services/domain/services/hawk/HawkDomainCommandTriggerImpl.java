@@ -16,6 +16,6 @@ class HawkDomainCommandTriggerImpl implements HawkDomainCommandTrigger {
     @Override
     public Set<String> findAllHawks() {
         return hawkCommand.findAllHawks().stream().map(Record::toString).collect(Collectors.toSet());
-//        return Collections.emptySet();
+//        return Collections.emptySet(); // negative test
     }
 }
