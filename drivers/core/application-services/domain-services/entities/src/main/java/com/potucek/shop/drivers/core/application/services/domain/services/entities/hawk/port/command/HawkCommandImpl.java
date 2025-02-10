@@ -16,6 +16,5 @@ class HawkCommandImpl implements HawkCommand {
     @Override
     public Set<Hawk> findAllHawks() {
         return hawkRepository.findAllHawksSortedByIUCNCategory();
-//        return Collections.emptySet();
     }
 }
