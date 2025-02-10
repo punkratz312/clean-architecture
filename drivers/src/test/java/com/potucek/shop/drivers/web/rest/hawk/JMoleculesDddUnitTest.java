@@ -5,7 +5,6 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 import org.jmolecules.archunit.JMoleculesDddRules;
-import org.junit.jupiter.api.Test;
 
 //@AnalyzeClasses(packagesOf = Application.class)
 @AnalyzeClasses(packages = "com.potucek.shop")
@@ -18,9 +17,20 @@ class JMoleculesDddUnitTest {
     @ArchTest
     ArchRule ddd = JMoleculesDddRules.all();
 
-    @Test
-    void documentation() {
+//    @Test
+//    void documentation() {
 //        new Documenter(Application.class)
 //                .writeDocumentation(Options.defaults(), CanvasOptions.defaults());
-    }
+//    }
+
+//    ApplicationModules modules = ApplicationModules.of(Application.class);
+//
+//    @Test
+//    void writeDocumentationSnippets() {
+//
+//        new Documenter(modules)
+//                .writeModulesAsPlantUml()
+//                .writeIndividualModulesAsPlantUml();
+//    }
+
 }
