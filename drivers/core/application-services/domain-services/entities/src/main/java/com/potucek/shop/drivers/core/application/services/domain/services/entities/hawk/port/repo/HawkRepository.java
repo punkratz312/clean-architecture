@@ -1,9 +1,11 @@
 package com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.port.repo;
 
 import com.potucek.shop.drivers.core.application.services.domain.services.entities.hawk.Hawk;
+import org.jmolecules.ddd.annotation.Repository;
 
 import java.util.Set;
 
+@Repository
 public interface HawkRepository {
 
     /**

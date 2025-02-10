@@ -1,4 +1,5 @@
 @DomainLayer
+//@Module
 @org.springframework.modulith.ApplicationModule(
         type = ApplicationModule.Type.OPEN
 )
