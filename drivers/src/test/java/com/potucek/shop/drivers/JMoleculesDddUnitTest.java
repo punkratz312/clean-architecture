@@ -16,11 +16,11 @@ class JMoleculesDddUnitTest {
         JMoleculesDddRules.all().check(classes);
     }
 
-//    @Test
-//    void documentation() {
-//        new Documenter(Application.class)
-//                .writeDocumentation(Documenter.DiagramOptions.defaults(), Documenter.CanvasOptions.defaults());
-//    }
+    @Test
+    void documentation() {
+        new Documenter(Application.class)
+                .writeDocumentation(Documenter.DiagramOptions.defaults(), Documenter.CanvasOptions.defaults());
+    }
 
     ApplicationModules modules = ApplicationModules.of(Application.class);
 
