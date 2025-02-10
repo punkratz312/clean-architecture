@@ -3,8 +3,10 @@ package com.potucek.shop.drivers.web.rest.hawk;
 import com.tngtech.archunit.core.domain.JavaClasses;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
-import com.tngtech.archunit.lang.ArchRule;
+import jakarta.ws.rs.core.Application;
 import org.jmolecules.archunit.JMoleculesDddRules;
+import org.junit.jupiter.api.Test;
+import org.springframework.modulith.docs.Documenter;
 
 //@AnalyzeClasses(packagesOf = Application.class)
 @AnalyzeClasses(packages = "com.potucek.shop")
@@ -14,14 +16,11 @@ class JMoleculesDddUnitTest {
         JMoleculesDddRules.all().check(classes);
     }
 
-    @ArchTest
-    ArchRule ddd = JMoleculesDddRules.all();
-
-//    @Test
-//    void documentation() {
-//        new Documenter(Application.class)
-//                .writeDocumentation(Options.defaults(), CanvasOptions.defaults());
-//    }
+    @Test
+    void documentation() {
+        new Documenter(Application.class)
+                .writeDocumentation(Documenter.DiagramOptions.defaults(), Documenter.CanvasOptions.defaults());
+    }
 
 //    ApplicationModules modules = ApplicationModules.of(Application.class);
 //
